@@ -1,0 +1,75 @@
+# 🌐 Kitto Central API Service
+
+The **Kitto Central API Service** provides a unified and type-safe way to make API requests across the application. Built on top of [Axios](https://axios-http.com/), it simplifies HTTP interactions with automatic authentication, consistent error handling, and full support for common HTTP methods.
+
+---
+
+## 🚀 Features
+
+- ✅ Type-safe API requests using **TypeScript Generics**
+- 🔐 Automatic **Authentication Token** management
+- ⚠️ Centralized **Error Handling**
+- 📡 Supports all major HTTP methods: `GET`, `POST`, `PUT`, `DELETE`
+
+---
+
+## 🧩 Getting Started
+
+### 🛠 Create an API Service Instance
+
+Use the `createApiService` factory function to initialize an API client for a specific endpoint.
+
+#### 🧪 General Syntax
+
+```ts
+const <apiInstanceName> = createApiService<<ResponseType>>('<endpointPath>');
+```
+
+- `<apiInstanceName>`: Variable to hold your API service instance
+- `<ResponseType>`: Expected data type (e.g., `User`, `Portfolio[]`)
+- `<endpointPath>`: Base endpoint for the API (e.g., `'/api/portfolio'`)
+
+---
+
+## 📘 Usage Example — Portfolios API
+
+In this example, we demonstrate how to set up and use the API service to interact with the **Portfolio** endpoint.
+
+### 1️⃣ Import & Instantiate
+
+```ts
+const portfoliosApi = createApiService<Portfolio[]>('/api/portfolio');
+```
+
+### 2️⃣ Usage Example
+
+```ts
+useEffect(() => {
+  async function fetchPortfolios() {
+    try {
+      const response = await portfoliosApi.get<Portfolio[]>('/');
+      setPortfolios(response.data);
+    } catch (err) {
+      console.error('Error fetching portfolios:', err);
+      const apiError = err as ApiError;
+      setError(apiError.message || 'An unknown API error occurred.');
+    }
+  }
+
+  fetchPortfolios();
+}, []);
+```
+
+---
+
+## 📦 Additional Notes
+
+- Ensure your API routes (e.g., `/api/portfolio`) are available and return the expected structure.
+- `createApiService` can be reused across modules—just instantiate it with the correct response type and base path.
+- Use `get`, `post`, `put`, and `delete` methods on the API instance just like with Axios, but with added type safety and error handling.
+
+---
+
+## 🧠 Tip
+
+You can abstract common request patterns (e.g., `list`, `create`, `update`, `delete`) inside your service layer using this centralized API service to keep your components clean and maintainable.
