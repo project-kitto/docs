@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#00d4ff",
+    "light": "#4dd7ff",
+    "dark": "#0095cc"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -31,6 +31,55 @@
               "essentials/settings",
               "essentials/navigation",
               "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Trading",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "trading/introduction",
+              "trading/market-fundamentals",
+              "trading/investment-tools"
+            ]
+          },
+          {
+            "group": "Fundamentals",
+            "pages": [
+              "trading/fundamentals/basics",
+              "trading/fundamentals/brokers",
+              "trading/fundamentals/risk-management"
+            ]
+          },
+          {
+            "group": "Analysis",
+            "pages": [
+              "trading/analysis/technical-analysis",
+              "trading/analysis/fundamental-analysis"
+            ]
+          },
+          {
+            "group": "Strategies",
+            "pages": [
+              "trading/strategies/trading-strategies"
+            ]
+          },
+          {
+            "group": "Advanced Topics",
+            "pages": [
+              "trading/portfolios-and-assets",
+              "trading/company-kpis"
+            ]
+          },
+          {
+            "group": "Markets",
+            "pages": [
+              "trading/markets/us-markets",
+              "trading/markets/stock-exchanges",
+              "trading/markets/market-regimes"
             ]
           }
         ]

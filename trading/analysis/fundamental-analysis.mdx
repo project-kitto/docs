@@ -1,0 +1,484 @@
+---
+title: 'Fundamental Analysis Deep Dive'
+description: 'Evaluate companies like a professional investor'
+icon: 'building'
+---
+
+<div className="flex items-center gap-2 mb-6 text-sm text-gray-600">
+  <Icon icon="clock" size={16} />
+  <span>18 min read</span>
+  <span>•</span>
+  <span>Last updated: December 2024 by Quoc Doan</span>
+</div>
+
+<Card title="🏢 What is Fundamental Analysis?" icon="magnifying-glass" color="#059669">
+  Fundamental analysis evaluates a company's intrinsic value by examining financial statements, business model, competitive advantages, and economic factors.
+</Card>
+
+## The Three Financial Statements
+
+<Tabs>
+  <Tab title="Income Statement">
+    <div className="space-y-4">
+      <Info>
+        Shows company's revenues, expenses, and profits over a period (quarterly/annually).
+      </Info>
+
+      **Key Components:**
+      ```
+      Revenue (Top Line)
+      - Cost of Goods Sold (COGS)
+      = Gross Profit
+      - Operating Expenses
+      = Operating Income (EBIT)
+      - Interest & Taxes
+      = Net Income (Bottom Line)
+      ```
+
+      <CardGroup cols={2}>
+        <Card title="Revenue Growth" icon="chart-line-up">
+          Look for consistent, sustainable revenue growth over multiple quarters
+        </Card>
+        <Card title="Profit Margins" icon="percentage">
+          Compare gross, operating, and net margins to industry averages
+        </Card>
+      </CardGroup>
+    </div>
+  </Tab>
+
+  <Tab title="Balance Sheet">
+    <div className="space-y-4">
+      <Info>
+        Snapshot of company's assets, liabilities, and equity at a specific point in time.
+      </Info>
+
+      **The Accounting Equation:**
+      ```
+      Assets = Liabilities + Shareholders' Equity
+      ```
+
+      **Key Areas to Analyze:**
+
+      <Accordion title="Assets">
+        **Current Assets** (within 1 year):
+        - Cash and cash equivalents
+        - Accounts receivable
+        - Inventory
+
+        **Non-Current Assets**:
+        - Property, plant & equipment
+        - Intangible assets
+        - Long-term investments
+      </Accordion>
+
+      <Accordion title="Liabilities">
+        **Current Liabilities** (within 1 year):
+        - Accounts payable
+        - Short-term debt
+        - Accrued expenses
+
+        **Long-term Liabilities**:
+        - Long-term debt
+        - Pension obligations
+        - Deferred tax liabilities
+      </Accordion>
+    </div>
+  </Tab>
+
+  <Tab title="Cash Flow Statement">
+    <div className="space-y-4">
+      <Info>
+        Shows how cash moves in and out of the business across three activities.
+      </Info>
+
+      <CardGroup cols={3}>
+        <Card title="Operating Cash Flow" icon="gear" color="#10b981">
+          Cash from core business operations
+
+          **Key Metric**: Should be positive and growing
+        </Card>
+
+        <Card title="Investing Cash Flow" icon="trending-up" color="#3b82f6">
+          Cash used for investments in assets
+
+          **Usually Negative**: Companies investing in growth
+        </Card>
+
+        <Card title="Financing Cash Flow" icon="banknotes" color="#8b5cf6">
+          Cash from debt, equity, dividends
+
+          **Can be Positive/Negative**: Depends on funding needs
+        </Card>
+      </CardGroup>
+
+      <Warning>
+        **Red Flag**: If net income is positive but operating cash flow is consistently negative, investigate the quality of earnings.
+      </Warning>
+    </div>
+  </Tab>
+</Tabs>
+
+## Key Financial Ratios
+
+### Profitability Ratios
+
+<CardGroup cols={2}>
+  <Card title="Gross Margin" icon="calculator">
+    ```
+    Gross Margin = (Revenue - COGS) / Revenue × 100%
+    ```
+
+    **What it shows**: Efficiency of core operations
+
+    **Good Range**: Varies by industry
+    - Software: 70-90%
+    - Retail: 20-40%
+    - Manufacturing: 30-50%
+  </Card>
+
+  <Card title="Return on Equity (ROE)" icon="trophy">
+    ```
+    ROE = Net Income / Shareholders' Equity × 100%
+    ```
+
+    **What it shows**: How effectively management uses equity
+
+    **Benchmark**:
+    - Excellent: > 20%
+    - Good: 15-20%
+    - Average: 10-15%
+  </Card>
+
+  <Card title="Return on Assets (ROA)" icon="building-columns">
+    ```
+    ROA = Net Income / Total Assets × 100%
+    ```
+
+    **What it shows**: How efficiently company uses assets
+
+    **Generally**: Higher is better, compare within industry
+  </Card>
+
+  <Card title="Net Profit Margin" icon="percentage">
+    ```
+    Net Margin = Net Income / Revenue × 100%
+    ```
+
+    **What it shows**: Overall profitability after all expenses
+
+    **Industry Comparison**: Essential for meaningful analysis
+  </Card>
+</CardGroup>
+
+### Liquidity Ratios
+
+<Tabs>
+  <Tab title="Current Ratio">
+    ```javascript
+    // Current Ratio Formula
+    const currentRatio = currentAssets / currentLiabilities;
+
+    // Interpretation
+    if (currentRatio > 2) {
+      console.log("Strong liquidity, may have excess cash");
+    } else if (currentRatio >= 1.5) {
+      console.log("Good liquidity position");
+    } else if (currentRatio >= 1) {
+      console.log("Adequate liquidity, monitor closely");
+    } else {
+      console.log("Potential liquidity concerns");
+    }
+    ```
+  </Tab>
+
+  <Tab title="Quick Ratio">
+    ```javascript
+    // Quick Ratio (Acid Test)
+    const quickRatio = (currentAssets - inventory) / currentLiabilities;
+
+    // More conservative than current ratio
+    // Excludes inventory (harder to convert to cash)
+
+    const interpretation = {
+      excellent: quickRatio >= 1.5,
+      good: quickRatio >= 1.0,
+      concerning: quickRatio < 1.0
+    };
+    ```
+  </Tab>
+</Tabs>
+
+### Valuation Ratios
+
+<Steps>
+  <Step title="Price-to-Earnings (P/E)">
+    **Formula**: Stock Price ÷ Earnings Per Share
+
+    **Interpretation**:
+    - Low P/E: Potentially undervalued or slow growth
+    - High P/E: Growth expectations or overvaluation
+    - Compare to industry average and historical P/E
+  </Step>
+
+  <Step title="Price-to-Book (P/B)">
+    **Formula**: Stock Price ÷ Book Value Per Share
+
+    **Use Cases**:
+    - Value investing screening
+    - Asset-heavy industries
+    - P/B < 1 may indicate undervaluation
+  </Step>
+
+  <Step title="Price-to-Sales (P/S)">
+    **Formula**: Market Cap ÷ Annual Revenue
+
+    **Benefits**:
+    - Useful for unprofitable companies
+    - Less manipulable than earnings
+    - Good for growth companies
+  </Step>
+</Steps>
+
+## Competitive Analysis
+
+<Card title="Porter's Five Forces" icon="shield" color="#6366f1">
+  Framework for analyzing competitive dynamics and industry attractiveness.
+</Card>
+
+<CardGroup cols={2}>
+  <Card title="Threat of New Entrants" icon="door-open">
+    **High Barriers = Good**
+    - High capital requirements
+    - Strong brand loyalty
+    - Regulatory barriers
+    - Network effects
+  </Card>
+
+  <Card title="Bargaining Power of Suppliers" icon="handshake">
+    **Lower Power = Better**
+    - Multiple supplier options
+    - Standardized inputs
+    - Forward integration ability
+  </Card>
+
+  <Card title="Bargaining Power of Buyers" icon="users">
+    **Lower Power = Better**
+    - Fragmented customer base
+    - High switching costs
+    - Unique product offering
+  </Card>
+
+  <Card title="Threat of Substitutes" icon="arrows-rotate">
+    **Lower Threat = Better**
+    - High switching costs
+    - Superior performance
+    - Strong brand preference
+  </Card>
+</CardGroup>
+
+## Economic Moats
+
+<Info>
+  An economic moat is a sustainable competitive advantage that protects a company's profits from competitors.
+</Info>
+
+<Tabs>
+  <Tab title="Network Effects">
+    **Definition**: Product becomes more valuable as more people use it
+
+    **Examples**:
+    - Social media platforms (Facebook, LinkedIn)
+    - Payment networks (Visa, Mastercard)
+    - Marketplaces (Amazon, eBay)
+
+    **Strength**: Very difficult to replicate once established
+  </Tab>
+
+  <Tab title="Brand Power">
+    **Definition**: Strong brand commands premium pricing
+
+    **Examples**:
+    - Luxury goods (LVMH, Hermès)
+    - Consumer staples (Coca-Cola, P&G)
+    - Technology (Apple, Google)
+
+    **Indicators**: Consistent pricing power, customer loyalty
+  </Tab>
+
+  <Tab title="Cost Advantages">
+    **Definition**: Structural cost advantages over competitors
+
+    **Sources**:
+    - Economies of scale
+    - Proprietary technology
+    - Favorable locations
+    - Government regulations
+
+    **Examples**: Walmart's distribution, TSMC's manufacturing
+  </Tab>
+
+  <Tab title="Switching Costs">
+    **Definition**: Costs (time, money, risk) of switching to competitor
+
+    **Examples**:
+    - Enterprise software (Oracle, SAP)
+    - Banking relationships
+    - Subscription services with data lock-in
+
+    **Benefits**: Predictable revenue, pricing power
+  </Tab>
+</Tabs>
+
+## Valuation Methods
+
+### Discounted Cash Flow (DCF)
+
+```python
+# Simplified DCF Model
+def dcf_valuation(free_cash_flows, terminal_growth, discount_rate):
+    """
+    Calculate intrinsic value using DCF method
+    """
+    present_values = []
+
+    # Discount projected cash flows
+    for year, fcf in enumerate(free_cash_flows, 1):
+        pv = fcf / (1 + discount_rate) ** year
+        present_values.append(pv)
+
+    # Terminal value
+    terminal_fcf = free_cash_flows[-1] * (1 + terminal_growth)
+    terminal_value = terminal_fcf / (discount_rate - terminal_growth)
+    terminal_pv = terminal_value / (1 + discount_rate) ** len(free_cash_flows)
+
+    # Total enterprise value
+    enterprise_value = sum(present_values) + terminal_pv
+
+    return enterprise_value
+
+# Example calculation
+projected_fcf = [100, 110, 121, 133, 146]  # 5-year projections
+terminal_growth = 0.03  # 3% perpetual growth
+discount_rate = 0.10    # 10% WACC
+
+intrinsic_value = dcf_valuation(projected_fcf, terminal_growth, discount_rate)
+```
+
+### Comparable Company Analysis
+
+<Accordion title="Trading Multiples Method">
+  **Process**:
+  1. Identify comparable companies (same industry, size, business model)
+  2. Calculate key multiples (P/E, EV/EBITDA, P/S)
+  3. Apply median/average multiples to target company
+  4. Derive implied valuation range
+
+  **Example**:
+  ```
+  Comparable P/E ratios: 15x, 18x, 22x, 16x, 20x
+  Median P/E: 18x
+  Target EPS: $5.00
+  Implied Value: 18 × $5.00 = $90 per share
+  ```
+</Accordion>
+
+## Red Flags to Avoid
+
+<Warning>
+  These warning signs could indicate potential problems with a company's financial health or management integrity.
+</Warning>
+
+<CardGroup cols={2}>
+  <Card title="Accounting Red Flags" icon="exclamation-triangle" color="#dc2626">
+    - Frequent auditor changes
+    - Aggressive revenue recognition
+    - Growing gap between earnings and cash flow
+    - Off-balance sheet liabilities
+  </Card>
+
+  <Card title="Business Red Flags" icon="building-exclamation" color="#ea580c">
+    - Declining market share
+    - Heavy dependence on few customers
+    - Excessive management turnover
+    - Insider selling at high levels
+  </Card>
+
+  <Card title="Financial Red Flags" icon="chart-line-down" color="#dc2626">
+    - Deteriorating margins
+    - Increasing debt-to-equity ratio
+    - Negative working capital trends
+    - Dividend cuts or suspensions
+  </Card>
+
+  <Card title="Market Red Flags" icon="trending-down" color="#b91c1c">
+    - Loss of competitive advantages
+    - Regulatory challenges
+    - Technology disruption
+    - ESG controversies
+  </Card>
+</CardGroup>
+
+## Putting It All Together
+
+<Steps>
+  <Step title="Industry Analysis">
+    Understand the industry dynamics, growth prospects, and key success factors
+  </Step>
+
+  <Step title="Company Quality">
+    Assess business model, competitive advantages, and management quality
+  </Step>
+
+  <Step title="Financial Health">
+    Analyze financial statements and key ratios for trends and red flags
+  </Step>
+
+  <Step title="Valuation">
+    Use multiple methods (DCF, comparables) to estimate intrinsic value
+  </Step>
+
+  <Step title="Investment Decision">
+    Compare intrinsic value to current price, considering margin of safety
+  </Step>
+</Steps>
+
+<Tip>
+  **Margin of Safety**: Only invest when the stock trades significantly below your calculated intrinsic value. This protects against estimation errors and unforeseen events.
+</Tip>
+
+## Tools and Resources
+
+<CardGroup cols={3}>
+  <Card title="SEC Filings" icon="file-text" href="https://sec.gov/edgar">
+    Access company 10-K, 10-Q, and 8-K filings for detailed financial information
+  </Card>
+
+  <Card title="Financial Databases" icon="database">
+    Bloomberg, FactSet, S&P Capital IQ for professional-grade financial data
+  </Card>
+
+  <Card title="Company Websites" icon="globe">
+    Investor relations sections contain earnings calls, presentations, and guidance
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+Ready to apply fundamental analysis to specific markets and develop your investment strategy?
+
+<CardGroup cols={2}>
+  <Card
+    title="US Market Guide"
+    icon="flag-usa"
+    href="/trading/markets/us-markets"
+  >
+    Learn specifics about trading US stocks and market dynamics
+  </Card>
+  <Card
+    title="Vietnam Market Guide"
+    icon="flag"
+    href="/trading/markets/vietnam-markets"
+  >
+    Discover opportunities in Vietnam's emerging stock market
+  </Card>
+</CardGroup>

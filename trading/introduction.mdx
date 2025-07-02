@@ -1,0 +1,616 @@
+---
+title: 'Welcome to Stock Trading'
+description: 'Your comprehensive guide to stock trading in US and Vietnam markets'
+icon: 'chart-line'
+---
+
+<div className="flex items-center gap-2 mb-6 text-sm text-gray-600">
+  <Icon icon="clock" size={16} />
+  <span>8 min read</span>
+  <span>•</span>
+  <span>Last updated: December 2024 by Quoc Doan</span>
+</div>
+
+<Frame>
+  <img
+    className="block dark:hidden"
+    src="/images/trading-hero-light.png"
+    alt="Stock Trading Dashboard"
+  />
+  <img
+    className="hidden dark:block"
+    src="/images/trading-hero-dark.png"
+    alt="Stock Trading Dashboard"
+  />
+</Frame>
+
+<Card title="🎯 What You'll Learn" icon="target">
+  Master the fundamentals of stock trading, from basic concepts to advanced strategies for both US and Vietnam markets.
+</Card>
+
+## Market Performance Comparison
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+  <div className="bg-gradient-to-br from-violet-500 via-purple-500 to-fuchsia-500 p-6 rounded-xl text-white shadow-lg">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+        <span className="text-lg">🇺🇸</span>
+      </div>
+      <h3 className="text-xl font-bold">US Markets</h3>
+    </div>
+    <div className="space-y-3">
+      <div className="flex justify-between items-center bg-white/10 p-3 rounded-lg">
+        <span className="text-white/90">Market Cap</span>
+        <span className="font-bold text-lg">$45+ Trillion</span>
+      </div>
+      <div className="flex justify-between items-center bg-white/10 p-3 rounded-lg">
+        <span className="text-white/90">Daily Volume</span>
+        <span className="font-bold text-lg">$200+ Billion</span>
+      </div>
+      <div className="flex justify-between items-center bg-white/10 p-3 rounded-lg">
+        <span className="text-white/90">Listed Companies</span>
+        <span className="font-bold text-lg">5,000+</span>
+      </div>
+    </div>
+  </div>
+
+  <div className="bg-gradient-to-br from-emerald-400 via-teal-500 to-cyan-500 p-6 rounded-xl text-white shadow-lg">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+        <span className="text-lg">🇻🇳</span>
+      </div>
+      <h3 className="text-xl font-bold">Vietnam Markets</h3>
+    </div>
+    <div className="space-y-3">
+      <div className="flex justify-between items-center bg-white/10 p-3 rounded-lg">
+        <span className="text-white/90">Market Cap</span>
+        <span className="font-bold text-lg">$200+ Billion</span>
+      </div>
+      <div className="flex justify-between items-center bg-white/10 p-3 rounded-lg">
+        <span className="text-white/90">GDP Growth</span>
+        <span className="font-bold text-lg">6-7% annually</span>
+      </div>
+      <div className="flex justify-between items-center bg-white/10 p-3 rounded-lg">
+        <span className="text-white/90">Listed Companies</span>
+        <span className="font-bold text-lg">800+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Historical Returns Analysis
+
+<div className="bg-gradient-to-br from-slate-50 to-gray-100 dark:from-slate-900 dark:to-gray-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 my-8">
+  <div className="overflow-x-auto">
+    <table className="w-full">
+      <thead>
+        <tr className="border-b border-slate-200 dark:border-slate-700">
+          <th className="text-left p-4 font-semibold text-slate-700 dark:text-slate-300">Asset Class</th>
+          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">1-Year</th>
+          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">5-Year</th>
+          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">10-Year</th>
+          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">20-Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
+          <td className="p-4 font-medium text-indigo-600 dark:text-indigo-400">S&P 500</td>
+          <td className="text-center p-4 text-emerald-600 dark:text-emerald-400 font-semibold">12.3%</td>
+          <td className="text-center p-4 text-emerald-600 dark:text-emerald-400 font-semibold">10.1%</td>
+          <td className="text-center p-4 text-emerald-600 dark:text-emerald-400 font-semibold">11.2%</td>
+          <td className="text-center p-4 text-emerald-600 dark:text-emerald-400 font-semibold">9.8%</td>
+        </tr>
+        <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
+          <td className="p-4 font-medium text-purple-600 dark:text-purple-400">NASDAQ</td>
+          <td className="text-center p-4 text-emerald-600 dark:text-emerald-400 font-semibold">15.7%</td>
+          <td className="text-center p-4 text-emerald-600 dark:text-emerald-400 font-semibold">12.4%</td>
+          <td className="text-center p-4 text-emerald-600 dark:text-emerald-400 font-semibold">13.1%</td>
+          <td className="text-center p-4 text-emerald-600 dark:text-emerald-400 font-semibold">10.9%</td>
+        </tr>
+        <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
+          <td className="p-4 font-medium text-teal-600 dark:text-teal-400">Vietnam VN-Index</td>
+          <td className="text-center p-4 text-amber-600 dark:text-amber-400 font-semibold">8.9%</td>
+          <td className="text-center p-4 text-amber-600 dark:text-amber-400 font-semibold">6.2%</td>
+          <td className="text-center p-4 text-amber-600 dark:text-amber-400 font-semibold">7.8%</td>
+          <td className="text-center p-4 text-emerald-600 dark:text-emerald-400 font-semibold">12.5%</td>
+        </tr>
+        <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
+          <td className="p-4 font-medium text-rose-600 dark:text-rose-400">Emerging Markets</td>
+          <td className="text-center p-4 text-amber-600 dark:text-amber-400 font-semibold">6.4%</td>
+          <td className="text-center p-4 text-orange-600 dark:text-orange-400 font-semibold">4.1%</td>
+          <td className="text-center p-4 text-amber-600 dark:text-amber-400 font-semibold">5.7%</td>
+          <td className="text-center p-4 text-amber-600 dark:text-amber-400 font-semibold">7.2%</td>
+        </tr>
+        <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+          <td className="p-4 font-medium text-slate-600 dark:text-slate-400">US Bonds</td>
+          <td className="text-center p-4 text-slate-600 dark:text-slate-400 font-semibold">2.1%</td>
+          <td className="text-center p-4 text-slate-600 dark:text-slate-400 font-semibold">2.8%</td>
+          <td className="text-center p-4 text-slate-600 dark:text-slate-400 font-semibold">3.2%</td>
+          <td className="text-center p-4 text-slate-600 dark:text-slate-400 font-semibold">4.1%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 my-6">
+  <div className="flex items-start gap-3">
+    <div className="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+      <span className="text-white text-sm">⚠</span>
+    </div>
+    <div>
+      <p className="text-amber-800 dark:text-amber-200 text-sm">
+        <strong>Important:</strong> Past performance does not guarantee future results. All investments carry risk of loss.
+      </p>
+    </div>
+  </div>
+</div>
+
+## Trading Volume by Time of Day
+
+```mermaid
+graph LR
+    A[9:30 AM] -->|High Volume| B[Opening Bell]
+    B --> C[10:30 AM]
+    C -->|Moderate| D[Mid Morning]
+    D --> E[12:00 PM]
+    E -->|Low Volume| F[Lunch Hour]
+    F --> G[2:00 PM]
+    G -->|Increasing| H[Afternoon]
+    H --> I[3:00 PM]
+    I -->|High Volume| J[Power Hour]
+    J --> K[4:00 PM Close]
+```
+
+## Why Stock Trading?
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+  <div className="group bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 border border-emerald-200 dark:border-emerald-800 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+        </svg>
+      </div>
+      <h3 className="text-lg font-bold text-emerald-900 dark:text-emerald-100">Wealth Building</h3>
+    </div>
+
+    <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg mb-4 border border-emerald-100 dark:border-emerald-800">
+      <div className="text-sm text-emerald-700 dark:text-emerald-300 mb-2">
+        <strong>$10,000 invested in S&P 500</strong>
+      </div>
+      <div className="text-emerald-600 dark:text-emerald-400">
+        10 years ago → <span className="text-xl font-bold">$26,500 today</span>
+      </div>
+    </div>
+
+    <div className="space-y-2 text-sm text-emerald-800 dark:text-emerald-200">
+      <div className="flex items-center gap-2">
+        <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+        <span>Compound interest effect</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+        <span>Beat inflation (3-4% annually)</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+        <span>Long-term wealth accumulation</span>
+      </div>
+    </div>
+  </div>
+
+  <div className="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      </div>
+      <h3 className="text-lg font-bold text-blue-900 dark:text-blue-100">Portfolio Diversification</h3>
+    </div>
+
+    <div className="grid grid-cols-2 gap-3 mb-4">
+      <div className="bg-indigo-100 dark:bg-indigo-900/50 p-3 rounded-lg text-center border border-indigo-200 dark:border-indigo-800">
+        <div className="text-xl font-bold text-indigo-700 dark:text-indigo-300">60%</div>
+        <div className="text-xs text-indigo-600 dark:text-indigo-400">US Stocks</div>
+      </div>
+      <div className="bg-emerald-100 dark:bg-emerald-900/50 p-3 rounded-lg text-center border border-emerald-200 dark:border-emerald-800">
+        <div className="text-xl font-bold text-emerald-700 dark:text-emerald-300">20%</div>
+        <div className="text-xs text-emerald-600 dark:text-emerald-400">International</div>
+      </div>
+      <div className="bg-purple-100 dark:bg-purple-900/50 p-3 rounded-lg text-center border border-purple-200 dark:border-purple-800">
+        <div className="text-xl font-bold text-purple-700 dark:text-purple-300">15%</div>
+        <div className="text-xs text-purple-600 dark:text-purple-400">Bonds</div>
+      </div>
+      <div className="bg-amber-100 dark:bg-amber-900/50 p-3 rounded-lg text-center border border-amber-200 dark:border-amber-800">
+        <div className="text-xl font-bold text-amber-700 dark:text-amber-300">5%</div>
+        <div className="text-xs text-amber-600 dark:text-amber-400">Alternative</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Market Sectors Performance (YTD)
+
+<Tabs>
+  <Tab title="🏆 Best Performers">
+    | Sector | Performance | Key Drivers |
+    |--------|-------------|-------------|
+    | **Technology** | +28.5% | AI Revolution, Cloud Growth |
+    | **Communication** | +22.1% | 5G Expansion, Streaming |
+    | **Consumer Discretionary** | +18.7% | Economic Recovery |
+    | **Financials** | +15.3% | Rising Interest Rates |
+  </Tab>
+
+  <Tab title="📉 Laggards">
+    | Sector | Performance | Challenges |
+    |--------|-------------|------------|
+    | **Real Estate** | -8.2% | Interest Rate Sensitivity |
+    | **Utilities** | -5.1% | Inflation Pressure |
+    | **Consumer Staples** | -2.4% | Margin Compression |
+    | **Energy** | +12.8% | Commodity Volatility |
+  </Tab>
+</Tabs>
+
+## Investment Timeline Recommendations
+
+<Steps>
+  <Step title="Emergency Fund (Month 1-3)" icon="piggy-bank">
+    <div className="bg-red-50 border border-red-200 p-4 rounded-lg">
+      <h4 className="font-semibold text-red-800">Priority #1: Safety Net</h4>
+      <p className="text-red-700 mt-2">Save 3-6 months of expenses in high-yield savings account (4-5% APY)</p>
+      <div className="mt-3 text-sm">
+        <strong>Recommended Amount:</strong> $15,000 - $30,000 for most individuals
+      </div>
+    </div>
+  </Step>
+
+  <Step title="High-Interest Debt (Month 1-6)" icon="credit-card">
+    <div className="bg-orange-50 border border-orange-200 p-4 rounded-lg">
+      <h4 className="font-semibold text-orange-800">Priority #2: Debt Freedom</h4>
+      <p className="text-orange-700 mt-2">Pay off credit cards (18-25% interest) before investing in stocks (8-10% expected)</p>
+    </div>
+  </Step>
+
+  <Step title="Begin Investing (Month 6+)" icon="chart-line-up">
+    <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
+      <h4 className="font-semibold text-green-800">Priority #3: Wealth Building</h4>
+      <p className="text-green-700 mt-2">Start with broad market index funds, then gradually learn individual stock analysis</p>
+    </div>
+  </Step>
+</Steps>
+
+## Risk vs Return Spectrum
+
+<div className="my-8 p-6 bg-gradient-to-r from-red-100 via-yellow-100 to-green-100 rounded-lg">
+  <h3 className="text-center font-bold mb-4">Investment Risk-Return Profile</h3>
+  <div className="flex justify-between items-end h-32">
+    <div className="text-center">
+      <div className="bg-green-500 h-8 w-16 mb-2 rounded"></div>
+      <div className="text-xs font-semibold">Savings<br/>1-2%</div>
+    </div>
+    <div className="text-center">
+      <div className="bg-blue-500 h-16 w-16 mb-2 rounded"></div>
+      <div className="text-xs font-semibold">Bonds<br/>3-5%</div>
+    </div>
+    <div className="text-center">
+      <div className="bg-purple-500 h-20 w-16 mb-2 rounded"></div>
+      <div className="text-xs font-semibold">Div. Stocks<br/>6-8%</div>
+    </div>
+    <div className="text-center">
+      <div className="bg-orange-500 h-24 w-16 mb-2 rounded"></div>
+      <div className="text-xs font-semibold">Growth Stocks<br/>8-12%</div>
+    </div>
+    <div className="text-center">
+      <div className="bg-red-500 h-32 w-16 mb-2 rounded"></div>
+      <div className="text-xs font-semibold">Individual Stocks<br/>-50% to +100%</div>
+    </div>
+  </div>
+  <div className="text-center mt-4 text-sm text-gray-600">
+    Lower Risk ← → Higher Risk
+  </div>
+</div>
+
+<Warning>
+  **Remember**: Higher potential returns always come with higher risk. Never invest more than you can afford to lose.
+</Warning>
+
+## Trading Psychology Quick Assessment
+
+<Accordion title="📝 Test Your Risk Tolerance">
+  **Scenario**: Your $10,000 investment drops to $7,000 in one month. What do you do?
+
+  <div className="space-y-3 mt-4">
+    <div className="p-3 border rounded-lg">
+      <strong>A)</strong> Sell immediately to prevent further losses
+      <div className="text-sm text-gray-600 mt-1">→ Conservative investor, consider bonds/CDs</div>
+    </div>
+    <div className="p-3 border rounded-lg">
+      <strong>B)</strong> Hold and wait for recovery
+      <div className="text-sm text-gray-600 mt-1">→ Moderate risk tolerance, suitable for index funds</div>
+    </div>
+    <div className="p-3 border rounded-lg">
+      <strong>C)</strong> Buy more at the lower price
+      <div className="text-sm text-gray-600 mt-1">→ Aggressive investor, can handle individual stocks</div>
+    </div>
+  </div>
+</Accordion>
+
+## Market Sentiment Indicators
+
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+  <div className="group bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-900/20 dark:to-rose-900/20 border border-red-200 dark:border-red-800 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+    <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+      <span className="text-2xl font-bold text-white">23</span>
+    </div>
+    <div className="text-sm font-medium text-red-700 dark:text-red-300 mb-1">VIX Fear Index</div>
+    <div className="flex items-center justify-center gap-1 text-xs text-red-600 dark:text-red-400">
+      <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+      </svg>
+      <span>High Volatility</span>
+    </div>
+  </div>
+
+  <div className="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+      <span className="text-lg font-bold text-white">67%</span>
+    </div>
+    <div className="text-sm font-medium text-blue-700 dark:text-blue-300 mb-1">Bull/Bear Ratio</div>
+    <div className="text-xs text-blue-600 dark:text-blue-400">Bullish Sentiment</div>
+  </div>
+
+  <div className="group bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 border border-emerald-200 dark:border-emerald-800 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+    <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+      <span className="text-xl font-bold text-white">1.8</span>
+    </div>
+    <div className="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-1">Put/Call Ratio</div>
+    <div className="text-xs text-emerald-600 dark:text-emerald-400">Moderate Fear</div>
+  </div>
+
+  <div className="group bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 border border-purple-200 dark:border-purple-800 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+      <span className="text-lg font-bold text-white">52%</span>
+    </div>
+    <div className="text-sm font-medium text-purple-700 dark:text-purple-300 mb-1">Stocks Above 200MA</div>
+    <div className="text-xs text-purple-600 dark:text-purple-400">Mixed Trend</div>
+  </div>
+</div>
+
+## Economic Calendar Impact
+
+<div className="bg-gradient-to-br from-slate-50 to-gray-100 dark:from-slate-900 dark:to-gray-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 my-8">
+  <div className="overflow-x-auto">
+    <table className="w-full">
+      <thead>
+        <tr className="border-b border-slate-200 dark:border-slate-700">
+          <th className="text-left p-4 font-semibold text-slate-700 dark:text-slate-300">Event</th>
+          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">Impact</th>
+          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">Frequency</th>
+          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">Market Reaction</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 group">
+          <td className="p-4 flex items-center gap-3">
+            <div className="w-8 h-8 bg-indigo-100 dark:bg-indigo-900/50 rounded-lg flex items-center justify-center">
+              <span className="text-sm">🏦</span>
+            </div>
+            <span className="font-medium text-slate-700 dark:text-slate-300">Fed Interest Rate Decision</span>
+          </td>
+          <td className="text-center p-4">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+              HIGH
+            </span>
+          </td>
+          <td className="text-center p-4 text-slate-600 dark:text-slate-400">8x/year</td>
+          <td className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">±2-5%</td>
+        </tr>
+        <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 group">
+          <td className="p-4 flex items-center gap-3">
+            <div className="w-8 h-8 bg-emerald-100 dark:bg-emerald-900/50 rounded-lg flex items-center justify-center">
+              <span className="text-sm">📊</span>
+            </div>
+            <span className="font-medium text-slate-700 dark:text-slate-300">Non-Farm Payrolls</span>
+          </td>
+          <td className="text-center p-4">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">
+              MED
+            </span>
+          </td>
+          <td className="text-center p-4 text-slate-600 dark:text-slate-400">Monthly</td>
+          <td className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">±1-3%</td>
+        </tr>
+        <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 group">
+          <td className="p-4 flex items-center gap-3">
+            <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center">
+              <span className="text-sm">📈</span>
+            </div>
+            <span className="font-medium text-slate-700 dark:text-slate-300">GDP Growth Rate</span>
+          </td>
+          <td className="text-center p-4">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">
+              MED
+            </span>
+          </td>
+          <td className="text-center p-4 text-slate-600 dark:text-slate-400">Quarterly</td>
+          <td className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">±1-2%</td>
+        </tr>
+        <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50 group">
+          <td className="p-4 flex items-center gap-3">
+            <div className="w-8 h-8 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center">
+              <span className="text-sm">💰</span>
+            </div>
+            <span className="font-medium text-slate-700 dark:text-slate-300">Inflation (CPI)</span>
+          </td>
+          <td className="text-center p-4">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">
+              HIGH
+            </span>
+          </td>
+          <td className="text-center p-4 text-slate-600 dark:text-slate-400">Monthly</td>
+          <td className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">±2-4%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+## Next Steps - Your Learning Path
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+  <div className="border-2 border-blue-200 rounded-lg p-4 hover:border-blue-400 transition-colors">
+    <div className="text-2xl mb-2">📚</div>
+    <h3 className="font-bold text-blue-700">Week 1-2: Fundamentals</h3>
+    <p className="text-sm text-gray-600 mt-2">Learn basic concepts, terminology, and market mechanics</p>
+    <a href="/trading/fundamentals/basics" className="text-blue-600 text-sm hover:underline">Start Learning →</a>
+  </div>
+
+  <div className="border-2 border-green-200 rounded-lg p-4 hover:border-green-400 transition-colors">
+    <div className="text-2xl mb-2">📊</div>
+    <h3 className="font-bold text-green-700">Week 3-4: Analysis</h3>
+    <p className="text-sm text-gray-600 mt-2">Master technical and fundamental analysis techniques</p>
+    <a href="/trading/analysis/technical-analysis" className="text-green-600 text-sm hover:underline">Learn Analysis →</a>
+  </div>
+
+  <div className="border-2 border-purple-200 rounded-lg p-4 hover:border-purple-400 transition-colors">
+    <div className="text-2xl mb-2">🚀</div>
+    <h3 className="font-bold text-purple-700">Week 5+: Practice</h3>
+    <p className="text-sm text-gray-600 mt-2">Start with paper trading, then real money</p>
+    <a href="/trading/portfolios-and-assets" className="text-purple-600 text-sm hover:underline">Build Portfolio →</a>
+  </div>
+</div>
+
+## Investment Calculator
+
+<div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg my-8">
+  <h3 className="text-xl font-bold mb-4">🧮 Compound Interest Calculator</h3>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="space-y-4">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">Initial Investment</label>
+        <div className="relative">
+          <span className="absolute left-3 top-2 text-gray-500">$</span>
+          <input type="number" className="w-full pl-8 pr-3 py-2 border rounded-lg" placeholder="10,000" />
+        </div>
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">Monthly Contribution</label>
+        <div className="relative">
+          <span className="absolute left-3 top-2 text-gray-500">$</span>
+          <input type="number" className="w-full pl-8 pr-3 py-2 border rounded-lg" placeholder="500" />
+        </div>
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">Annual Return</label>
+        <div className="relative">
+          <input type="number" className="w-full pl-3 pr-8 py-2 border rounded-lg" placeholder="8" />
+          <span className="absolute right-3 top-2 text-gray-500">%</span>
+        </div>
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">Time Horizon</label>
+        <div className="relative">
+          <input type="number" className="w-full pl-3 pr-16 py-2 border rounded-lg" placeholder="20" />
+          <span className="absolute right-3 top-2 text-gray-500">years</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-white p-4 rounded-lg shadow">
+      <h4 className="font-bold text-gray-800 mb-3">Projected Results</h4>
+      <div className="space-y-3">
+        <div className="flex justify-between items-center">
+          <span className="text-gray-600">Total Contributions:</span>
+          <span className="font-bold text-blue-600">$130,000</span>
+        </div>
+        <div className="flex justify-between items-center">
+          <span className="text-gray-600">Investment Growth:</span>
+          <span className="font-bold text-green-600">$240,876</span>
+        </div>
+        <div className="border-t pt-2">
+          <div className="flex justify-between items-center">
+            <span className="text-gray-800 font-semibold">Final Balance:</span>
+            <span className="font-bold text-purple-600 text-xl">$370,876</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-4 h-2 bg-gray-200 rounded-full overflow-hidden">
+        <div className="h-full bg-gradient-to-r from-blue-500 via-green-500 to-purple-500" style={{width: '65%'}}></div>
+      </div>
+      <div className="text-xs text-gray-500 mt-1">65% from investment growth</div>
+    </div>
+  </div>
+</div>
+
+## Risk Tolerance Quiz
+
+<div className="bg-white border-2 border-gray-200 rounded-lg p-6 my-8">
+  <h3 className="text-xl font-bold mb-4">📋 Quick Risk Assessment</h3>
+
+  <div className="space-y-6">
+    <div className="space-y-3">
+      <h4 className="font-semibold">1. What's your investment timeline?</h4>
+      <div className="space-y-2">
+        <label className="flex items-center">
+          <input type="radio" name="timeline" className="mr-2" />
+          <span className="text-sm">Less than 5 years (Conservative)</span>
+        </label>
+        <label className="flex items-center">
+          <input type="radio" name="timeline" className="mr-2" />
+          <span className="text-sm">5-15 years (Moderate)</span>
+        </label>
+        <label className="flex items-center">
+          <input type="radio" name="timeline" className="mr-2" />
+          <span className="text-sm">15+ years (Aggressive)</span>
+        </label>
+      </div>
+    </div>
+
+    <div className="space-y-3">
+      <h4 className="font-semibold">2. If your portfolio dropped 20% in a month, you would:</h4>
+      <div className="space-y-2">
+        <label className="flex items-center">
+          <input type="radio" name="reaction" className="mr-2" />
+          <span className="text-sm">Sell everything immediately</span>
+        </label>
+        <label className="flex items-center">
+          <input type="radio" name="reaction" className="mr-2" />
+          <span className="text-sm">Hold and wait for recovery</span>
+        </label>
+        <label className="flex items-center">
+          <input type="radio" name="reaction" className="mr-2" />
+          <span className="text-sm">Buy more at lower prices</span>
+        </label>
+      </div>
+    </div>
+
+    <div className="space-y-3">
+      <h4 className="font-semibold">3. Your primary investment goal is:</h4>
+      <div className="space-y-2">
+        <label className="flex items-center">
+          <input type="radio" name="goal" className="mr-2" />
+          <span className="text-sm">Preserve capital and generate income</span>
+        </label>
+        <label className="flex items-center">
+          <input type="radio" name="goal" className="mr-2" />
+          <span className="text-sm">Balanced growth and income</span>
+        </label>
+        <label className="flex items-center">
+          <input type="radio" name="goal" className="mr-2" />
+          <span className="text-sm">Maximum long-term growth</span>
+        </label>
+      </div>
+    </div>
+
+    <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+      Get My Risk Profile
+    </button>
+  </div>
+</div>

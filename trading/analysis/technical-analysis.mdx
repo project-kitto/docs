@@ -1,0 +1,418 @@
+---
+title: 'Technical Analysis Mastery'
+description: 'Learn to read charts and predict price movements using modern analysis techniques'
+icon: 'chart-candlestick'
+---
+
+<div className="flex items-center gap-2 mb-6 text-sm text-slate-500 dark:text-slate-400">
+  <Icon icon="chart-candlestick" size={16} />
+  <span>15 min read</span>
+  <span>•</span>
+  <span>Last updated: July 2025</span>
+</div>
+
+<Frame>
+  <img
+    className="block dark:hidden"
+    src="/images/technical-analysis-light.png"
+    alt="Technical Analysis Chart Dashboard"
+  />
+  <img
+    className="hidden dark:block"
+    src="/images/technical-analysis-dark.png"
+    alt="Technical Analysis Chart Dashboard"
+  />
+</Frame>
+
+<div className="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-900/20 dark:via-purple-900/20 dark:to-pink-900/20 p-6 rounded-xl border border-indigo-200 dark:border-indigo-800 my-8">
+  <div className="flex items-center gap-4 mb-4">
+    <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center">
+      <span className="text-white text-2xl">📊</span>
+    </div>
+    <div>
+      <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200">What is Technical Analysis?</h3>
+      <p className="text-slate-600 dark:text-slate-400 text-sm">The art and science of reading market psychology</p>
+    </div>
+  </div>
+  <p className="text-slate-700 dark:text-slate-300">
+    Technical analysis is the study of price and volume data to predict future price movements. It's based on the principle that all market information is reflected in the stock price, and that patterns tend to repeat due to human psychology.
+  </p>
+</div>
+
+## Core Principles
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+  <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-xl border border-blue-200 dark:border-blue-800">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+        <span className="text-white text-lg">👁️</span>
+      </div>
+      <h4 className="font-bold text-blue-900 dark:text-blue-100">Price Reflects Everything</h4>
+    </div>
+    <p className="text-blue-800 dark:text-blue-200 text-sm">
+      All known information is already factored into the current stock price, making charts the ultimate information source.
+    </p>
+  </div>
+
+  <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-xl border border-green-200 dark:border-green-800">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+        <span className="text-white text-lg">🔄</span>
+      </div>
+      <h4 className="font-bold text-green-900 dark:text-green-100">History Repeats</h4>
+    </div>
+    <p className="text-green-800 dark:text-green-200 text-sm">
+      Market patterns tend to repeat due to consistent human psychology, emotions, and behavior patterns.
+    </p>
+  </div>
+
+  <div className="bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 p-6 rounded-xl border border-purple-200 dark:border-purple-800">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
+        <span className="text-white text-lg">📈</span>
+      </div>
+      <h4 className="font-bold text-purple-900 dark:text-purple-100">Trends Persist</h4>
+    </div>
+    <p className="text-purple-800 dark:text-purple-200 text-sm">
+      Stocks in motion tend to stay in motion until a clear reversal signal appears on the charts.
+    </p>
+  </div>
+</div>
+
+## Chart Types
+
+<div className="bg-gradient-to-br from-slate-50 to-gray-100 dark:from-slate-900 dark:to-gray-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 my-8">
+  <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-6 text-center">Essential Chart Types for Technical Analysis</h3>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-200 dark:border-emerald-800">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
+          <span className="text-white text-lg">🕯️</span>
+        </div>
+        <h4 className="font-bold text-emerald-900 dark:text-emerald-100">Candlestick Charts</h4>
+      </div>
+
+      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg mb-4">
+        <div className="text-center space-y-2">
+          <div className="flex items-center justify-center gap-4">
+            <div className="bg-emerald-500 w-4 h-12 rounded relative">
+              <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-0.5 h-3 bg-emerald-700"></div>
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0.5 h-3 bg-emerald-700"></div>
+              <div className="text-xs text-white font-bold absolute inset-0 flex items-center justify-center">↑</div>
+            </div>
+            <div className="bg-red-500 w-4 h-8 rounded relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-0.5 h-4 bg-red-700"></div>
+              <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-0.5 h-4 bg-red-700"></div>
+              <div className="text-xs text-white font-bold absolute inset-0 flex items-center justify-center">↓</div>
+            </div>
+          </div>
+          <div className="text-xs text-emerald-700 dark:text-emerald-300">Bullish vs Bearish</div>
+        </div>
+      </div>
+
+      <div className="space-y-2 text-sm text-emerald-800 dark:text-emerald-200">
+        <div className="flex items-center gap-2">
+          <div className="w-1 h-1 bg-emerald-500 rounded-full"></div>
+          <span>Shows OHLC data</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-1 h-1 bg-emerald-500 rounded-full"></div>
+          <span>Most popular chart type</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-1 h-1 bg-emerald-500 rounded-full"></div>
+          <span>Clear visual patterns</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-200 dark:border-blue-800">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+          <span className="text-white text-lg">📈</span>
+        </div>
+        <h4 className="font-bold text-blue-900 dark:text-blue-100">Line Charts</h4>
+      </div>
+
+      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg mb-4">
+        <div className="h-12 flex items-end justify-center space-x-1">
+          <div className="w-1 h-4 bg-blue-400"></div>
+          <div className="w-1 h-6 bg-blue-500"></div>
+          <div className="w-1 h-8 bg-blue-600"></div>
+          <div className="w-1 h-10 bg-blue-700"></div>
+          <div className="w-1 h-7 bg-blue-600"></div>
+          <div className="w-1 h-9 bg-blue-700"></div>
+          <div className="w-1 h-12 bg-blue-800"></div>
+        </div>
+        <div className="text-xs text-blue-700 dark:text-blue-300 text-center mt-2">Clean Trend Line</div>
+      </div>
+
+      <div className="space-y-2 text-sm text-blue-800 dark:text-blue-200">
+        <div className="flex items-center gap-2">
+          <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+          <span>Connects closing prices</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+          <span>Long-term trend analysis</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+          <span>Reduces market noise</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-xl border border-purple-200 dark:border-purple-800">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
+          <span className="text-white text-lg">📊</span>
+        </div>
+        <h4 className="font-bold text-purple-900 dark:text-purple-100">Volume Charts</h4>
+      </div>
+
+      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg mb-4">
+        <div className="h-12 flex items-end justify-center space-x-1">
+          <div className="w-2 h-3 bg-purple-300"></div>
+          <div className="w-2 h-8 bg-purple-500"></div>
+          <div className="w-2 h-5 bg-purple-400"></div>
+          <div className="w-2 h-12 bg-purple-700"></div>
+          <div className="w-2 h-6 bg-purple-500"></div>
+          <div className="w-2 h-9 bg-purple-600"></div>
+          <div className="w-2 h-4 bg-purple-400"></div>
+        </div>
+        <div className="text-xs text-purple-700 dark:text-purple-300 text-center mt-2">Trading Volume</div>
+      </div>
+
+      <div className="space-y-2 text-sm text-purple-800 dark:text-purple-200">
+        <div className="flex items-center gap-2">
+          <div className="w-1 h-1 bg-purple-500 rounded-full"></div>
+          <span>Confirms price moves</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-1 h-1 bg-purple-500 rounded-full"></div>
+          <span>Shows market interest</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-1 h-1 bg-purple-500 rounded-full"></div>
+          <span>Validates breakouts</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Key Technical Indicators
+
+### Moving Averages
+
+<Accordion title="Simple Moving Average (SMA)">
+  **Formula**: Sum of closing prices ÷ Number of periods
+
+  ```python
+  # 20-day Simple Moving Average
+  SMA_20 = (Close_1 + Close_2 + ... + Close_20) / 20
+
+  # Common periods:
+  # Short-term: 10, 20 days
+  # Medium-term: 50 days
+  # Long-term: 100, 200 days
+  ```
+
+  **Trading Signals:**
+  - Price above SMA = Bullish trend
+  - Price below SMA = Bearish trend
+  - SMA crossovers indicate trend changes
+</Accordion>
+
+<Accordion title="Exponential Moving Average (EMA)">
+  **Formula**: More weight given to recent prices
+
+  ```python
+  # EMA gives more weight to recent prices
+  # Reacts faster to price changes than SMA
+
+  EMA_today = (Close_today × Multiplier) + (EMA_yesterday × (1 - Multiplier))
+  Multiplier = 2 / (Period + 1)
+  ```
+
+  **Advantages:**
+  - Faster response to price changes
+  - Better for short-term trading
+  - Reduces lag compared to SMA
+</Accordion>
+
+### Momentum Indicators
+
+<CardGroup cols={2}>
+  <Card title="RSI (14)" icon="gauge">
+    **Relative Strength Index**
+
+    Measures overbought/oversold conditions
+
+    - **Above 70**: Potentially overbought
+    - **Below 30**: Potentially oversold
+    - **50**: Neutral momentum
+  </Card>
+
+  <Card title="MACD" icon="wave-square">
+    **Moving Average Convergence Divergence**
+
+    Shows relationship between two moving averages
+
+    - **MACD Line**: 12 EMA - 26 EMA
+    - **Signal Line**: 9 EMA of MACD
+    - **Histogram**: MACD - Signal Line
+  </Card>
+</CardGroup>
+
+## Chart Patterns
+
+<Warning>
+  Patterns are probabilities, not guarantees. Always combine with other analysis methods.
+</Warning>
+
+### Reversal Patterns
+
+<Tabs>
+  <Tab title="Head & Shoulders">
+    <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+      <h4 className="text-red-800 font-semibold mb-2">📉 Bearish Reversal</h4>
+
+      **Pattern Structure:**
+      1. **Left Shoulder**: Price rises then falls
+      2. **Head**: Higher peak, then decline
+      3. **Right Shoulder**: Lower peak than head
+      4. **Neckline**: Support connecting lows
+
+      **Target**: Neckline break distance projected downward
+    </div>
+  </Tab>
+
+  <Tab title="Double Top/Bottom">
+    <div className="space-y-4">
+      <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+        <h4 className="text-red-800 font-semibold mb-2">📉 Double Top (Bearish)</h4>
+        <p>Two peaks at similar levels with valley between</p>
+      </div>
+
+      <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+        <h4 className="text-green-800 font-semibold mb-2">📈 Double Bottom (Bullish)</h4>
+        <p>Two troughs at similar levels with peak between</p>
+      </div>
+    </div>
+  </Tab>
+</Tabs>
+
+### Continuation Patterns
+
+<CardGroup cols={2}>
+  <Card title="Triangles" icon="triangle">
+    **Symmetrical Triangle**
+    - Converging trend lines
+    - Decreasing volume
+    - Breakout determines direction
+
+    **Ascending/Descending**
+    - Bias toward trend direction
+  </Card>
+
+  <Card title="Flags & Pennants" icon="flag">
+    **Bull Flag**
+    - Sharp rise (flagpole)
+    - Slight pullback (flag)
+    - Continuation higher
+
+    **Bear Flag**
+    - Sharp decline
+    - Small bounce
+    - Continuation lower
+  </Card>
+</CardGroup>
+
+## Support & Resistance
+
+<Steps>
+  <Step title="Identify Key Levels">
+    Look for areas where price repeatedly bounced or stalled
+  </Step>
+  <Step title="Draw Horizontal Lines">
+    Connect multiple touches at similar price levels
+  </Step>
+  <Step title="Watch for Breaks">
+    Significant volume on break confirms new direction
+  </Step>
+  <Step title="Role Reversal">
+    Broken support becomes resistance, broken resistance becomes support
+  </Step>
+</Steps>
+
+<Tip>
+  **Pro Tip**: The more times a level is tested, the more significant it becomes. Round numbers (like $50, $100) often act as psychological support/resistance.
+</Tip>
+
+## Practical Application
+
+```javascript
+// Trading Setup Example
+const technicalSetup = {
+  entry: {
+    pattern: "Bull Flag breakout",
+    confirmation: "Volume spike + RSI > 50",
+    price: "Above flag resistance"
+  },
+
+  riskManagement: {
+    stopLoss: "Below flag support",
+    riskReward: "Minimum 2:1 ratio",
+    positionSize: "2% of portfolio"
+  },
+
+  target: {
+    initial: "Flagpole height projected up",
+    final: "Next major resistance level"
+  }
+};
+```
+
+## Common Mistakes to Avoid
+
+<CardGroup cols={2}>
+  <Card title="Over-Analysis" icon="exclamation-triangle" color="#ef4444">
+    Don't use too many indicators at once. Keep it simple and focus on price action.
+  </Card>
+
+  <Card title="Ignoring Volume" icon="volume-high" color="#f59e0b">
+    Volume confirms price movements. Low volume breakouts often fail.
+  </Card>
+
+  <Card title="No Risk Management" icon="shield-exclamation" color="#dc2626">
+    Always have a stop loss before entering any trade.
+  </Card>
+
+  <Card title="Forcing Patterns" icon="puzzle-piece" color="#7c3aed">
+    Don't see patterns that aren't clearly there. Wait for quality setups.
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+Ready to combine technical analysis with fundamental research for better trading decisions?
+
+<CardGroup cols={2}>
+  <Card
+    title="Fundamental Analysis"
+    icon="building"
+    href="/trading/analysis/fundamental-analysis"
+  >
+    Learn to analyze company financials and intrinsic value
+  </Card>
+  <Card
+    title="Trading Strategies"
+    icon="chess"
+    href="/trading/strategies/day-trading"
+  >
+    Discover different trading approaches and timeframes
+  </Card>
+</CardGroup>
