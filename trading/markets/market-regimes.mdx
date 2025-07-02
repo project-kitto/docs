@@ -8,46 +8,40 @@ icon: 'chart-mixed'
   <Icon icon="chart-mixed" size={16} />
   <span>10 min read</span>
   <span>•</span>
-  <span>Last updated: July 2025</span>
+  <span>Last updated: January 2025</span>
 </div>
-
-<Frame>
-  <img
-    className="block dark:hidden"
-    src="/images/market-regimes-light.png"
-    alt="Market Regimes Analysis Dashboard"
-  />
-  <img
-    className="hidden dark:block"
-    src="/images/market-regimes-dark.png"
-    alt="Market Regimes Analysis Dashboard"
-  />
-</Frame>
 
 ## What are Market Regimes?
 
-<div className="bg-gradient-to-br from-indigo-50 via-purple-50 to-violet-50 dark:from-indigo-900/20 dark:via-purple-900/20 dark:to-violet-900/20 p-6 rounded-xl border border-indigo-200 dark:border-indigo-800 my-8">
+<div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 my-8">
   <div className="flex items-center gap-4 mb-4">
-    <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center">
-      <span className="text-white text-2xl">🌊</span>
+    <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-600">
+      <Icon icon="waves" size={24} className="text-slate-300" />
     </div>
     <div>
-      <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200">Market Regimes</h3>
-      <p className="text-slate-600 dark:text-slate-400 text-sm">Distinct market environments with unique characteristics</p>
+      <h3 className="text-xl font-bold text-slate-200">Market Regimes</h3>
+      <p className="text-slate-400 text-sm">Distinct market environments with unique characteristics</p>
     </div>
   </div>
-  <p className="text-slate-700 dark:text-slate-300">
+  <p className="text-slate-300">
     Market regimes are distinct periods characterized by specific market behavior, volatility patterns, and economic conditions. Understanding these regimes helps investors adapt their strategies to current market environments.
   </p>
+
+  <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700 mt-6">
+    <h4 className="text-slate-200 font-semibold mb-2">Why Market Regimes Matter</h4>
+    <p className="text-slate-300 text-sm">
+      Different market conditions require different investment approaches. A strategy that works well in a bull market may fail catastrophically in a bear market. Recognizing regime changes early can help protect and grow your wealth.
+    </p>
+  </div>
 </div>
 
 ## The Four Market Regimes
 
 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-  <div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 p-6 rounded-xl border border-emerald-200 dark:border-emerald-800">
+  <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-xl">🚀</span>
+      <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-600">
+        <Icon icon="rocket" size={24} className="text-green-400" />
       </div>
       <h4 className="text-xl font-bold text-emerald-900 dark:text-emerald-100">Bull Market</h4>
     </div>
@@ -57,23 +51,23 @@ icon: 'chart-mixed'
         Sustained period of rising prices, typically 20%+ gain from recent lows
       </p>
 
-      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg border border-emerald-200 dark:border-emerald-700">
+      <div className="bg-slate-800/50 p-4 rounded-lg border border-emerald-200 dark:border-emerald-700">
         <div className="text-xs font-semibold text-emerald-800 dark:text-emerald-200 mb-2">Characteristics:</div>
         <div className="space-y-1 text-xs text-emerald-700 dark:text-emerald-300">
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-emerald-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Rising prices across most sectors</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-emerald-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>High investor confidence</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-emerald-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Strong economic growth</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-emerald-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Low unemployment</span>
           </div>
         </div>
@@ -86,10 +80,10 @@ icon: 'chart-mixed'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-900/20 dark:to-rose-900/20 p-6 rounded-xl border border-red-200 dark:border-red-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-xl">📉</span>
+      <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
+        <span className="text-white text-xl">trending-down</span>
       </div>
       <h4 className="text-xl font-bold text-red-900 dark:text-red-100">Bear Market</h4>
     </div>
@@ -99,23 +93,23 @@ icon: 'chart-mixed'
         Sustained period of falling prices, typically 20%+ decline from recent highs
       </p>
 
-      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg border border-red-200 dark:border-red-700">
+      <div className="bg-slate-800/50 p-4 rounded-lg border border-red-200 dark:border-red-700">
         <div className="text-xs font-semibold text-red-800 dark:text-red-200 mb-2">Characteristics:</div>
         <div className="space-y-1 text-xs text-red-700 dark:text-red-300">
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Declining prices across sectors</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Pessimistic investor sentiment</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Economic contraction</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Rising unemployment</span>
           </div>
         </div>
@@ -128,10 +122,10 @@ icon: 'chart-mixed'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 p-6 rounded-xl border border-orange-200 dark:border-orange-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-xl">⚡</span>
+      <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
+        <span className="text-white text-xl">FAST</span>
       </div>
       <h4 className="text-xl font-bold text-orange-900 dark:text-orange-100">High Volatility</h4>
     </div>
@@ -141,23 +135,23 @@ icon: 'chart-mixed'
         Periods of extreme price swings and uncertainty
       </p>
 
-      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg border border-orange-200 dark:border-orange-700">
+      <div className="bg-slate-800/50 p-4 rounded-lg border border-orange-200 dark:border-orange-700">
         <div className="text-xs font-semibold text-orange-800 dark:text-orange-200 mb-2">Characteristics:</div>
         <div className="space-y-1 text-xs text-orange-700 dark:text-orange-300">
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-orange-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Large daily price movements</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-orange-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>High VIX levels (>25)</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-orange-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>News-driven markets</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-orange-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Emotional trading</span>
           </div>
         </div>
@@ -170,10 +164,10 @@ icon: 'chart-mixed'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-xl border border-blue-200 dark:border-blue-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-xl">😴</span>
+      <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
+        <span className="text-white text-xl">moon</span>
       </div>
       <h4 className="text-xl font-bold text-blue-900 dark:text-blue-100">Low Volatility</h4>
     </div>
@@ -183,23 +177,23 @@ icon: 'chart-mixed'
         Calm markets with minimal price movements
       </p>
 
-      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg border border-blue-200 dark:border-blue-700">
+      <div className="bg-slate-800/50 p-4 rounded-lg border border-blue-200 dark:border-blue-700">
         <div className="text-xs font-semibold text-blue-800 dark:text-blue-200 mb-2">Characteristics:</div>
         <div className="space-y-1 text-xs text-blue-700 dark:text-blue-300">
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Small daily price ranges</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Low VIX levels (&lt;15)</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Stable economic conditions</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Complacent sentiment</span>
           </div>
         </div>
@@ -215,14 +209,14 @@ icon: 'chart-mixed'
 
 ## Major Economic Crises in History
 
-<div className="bg-gradient-to-br from-slate-50 to-gray-100 dark:from-slate-900 dark:to-gray-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 my-8">
-  <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-6 text-center">Learning from Historical Crises</h3>
+<div className="bg-slate-900/50">
+  <h3 className="text-xl font-bold text-slate-200 mb-6 text-center">Learning from Historical Crises</h3>
 
   <div className="space-y-6">
-    <div className="bg-red-50 dark:bg-red-900/20 p-6 rounded-xl border border-red-200 dark:border-red-800">
+    <div className="bg-red-50 dark:bg-red-900/20 p-6 rounded-xl border border-slate-700">
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center">
-          <span className="text-white text-lg">📊</span>
+        <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
+          <span className="text-white text-lg">bar-chart</span>
         </div>
         <div>
           <h4 className="font-bold text-red-900 dark:text-red-100">2008 Financial Crisis</h4>
@@ -231,25 +225,25 @@ icon: 'chart-mixed'
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+        <div className="bg-slate-800/50 p-4 rounded-lg">
           <div className="text-xs font-semibold text-red-800 dark:text-red-200 mb-2">Cause</div>
           <div className="text-xs text-red-700 dark:text-red-300">Subprime mortgage crisis, excessive leverage</div>
         </div>
-        <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+        <div className="bg-slate-800/50 p-4 rounded-lg">
           <div className="text-xs font-semibold text-red-800 dark:text-red-200 mb-2">Impact</div>
           <div className="text-xs text-red-700 dark:text-red-300">S&P 500 fell 57% peak-to-trough</div>
         </div>
-        <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+        <div className="bg-slate-800/50 p-4 rounded-lg">
           <div className="text-xs font-semibold text-red-800 dark:text-red-200 mb-2">Recovery</div>
           <div className="text-xs text-red-700 dark:text-red-300">Fed QE, TARP, 6 years to new highs</div>
         </div>
       </div>
     </div>
 
-    <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-xl border border-purple-200 dark:border-purple-800">
+    <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-xl border border-slate-700">
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
-          <span className="text-white text-lg">💻</span>
+        <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
+          <span className="text-white text-lg">laptop</span>
         </div>
         <div>
           <h4 className="font-bold text-purple-900 dark:text-purple-100">2000 Dot-Com Bubble</h4>
@@ -258,25 +252,25 @@ icon: 'chart-mixed'
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+        <div className="bg-slate-800/50 p-4 rounded-lg">
           <div className="text-xs font-semibold text-purple-800 dark:text-purple-200 mb-2">Cause</div>
           <div className="text-xs text-purple-700 dark:text-purple-300">Internet speculation, overvaluation</div>
         </div>
-        <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+        <div className="bg-slate-800/50 p-4 rounded-lg">
           <div className="text-xs font-semibold text-purple-800 dark:text-purple-200 mb-2">Impact</div>
           <div className="text-xs text-purple-700 dark:text-purple-300">NASDAQ fell 78% from peak</div>
         </div>
-        <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+        <div className="bg-slate-800/50 p-4 rounded-lg">
           <div className="text-xs font-semibold text-purple-800 dark:text-purple-200 mb-2">Recovery</div>
           <div className="text-xs text-purple-700 dark:text-purple-300">15+ years to exceed 2000 highs</div>
         </div>
       </div>
     </div>
 
-    <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl border border-green-200 dark:border-green-800">
+    <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl border border-slate-700">
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
-          <span className="text-white text-lg">🦠</span>
+        <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
+          <span className="text-white text-lg">virus</span>
         </div>
         <div>
           <h4 className="font-bold text-green-900 dark:text-green-100">2020 COVID-19 Crash</h4>
@@ -285,15 +279,15 @@ icon: 'chart-mixed'
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+        <div className="bg-slate-800/50 p-4 rounded-lg">
           <div className="text-xs font-semibold text-green-800 dark:text-green-200 mb-2">Cause</div>
           <div className="text-xs text-green-700 dark:text-green-300">Global pandemic, lockdowns</div>
         </div>
-        <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+        <div className="bg-slate-800/50 p-4 rounded-lg">
           <div className="text-xs font-semibold text-green-800 dark:text-green-200 mb-2">Impact</div>
           <div className="text-xs text-green-700 dark:text-green-300">S&P 500 fell 34% in 5 weeks</div>
         </div>
-        <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+        <div className="bg-slate-800/50 p-4 rounded-lg">
           <div className="text-xs font-semibold text-green-800 dark:text-green-200 mb-2">Recovery</div>
           <div className="text-xs text-green-700 dark:text-green-300">Fastest recovery in history (5 months)</div>
         </div>
@@ -305,11 +299,11 @@ icon: 'chart-mixed'
 ## Market Regime Indicators
 
 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-  <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 p-6 rounded-xl border border-indigo-200 dark:border-indigo-800">
-    <h4 className="text-lg font-bold text-indigo-900 dark:text-indigo-100 mb-4">📊 Key Indicators to Watch</h4>
+  <div className="bg-slate-900/50">
+    <h4 className="text-lg font-bold text-indigo-900 dark:text-indigo-100 mb-4">bar-chart Key Indicators to Watch</h4>
 
     <div className="space-y-4">
-      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+      <div className="bg-slate-800/50 p-4 rounded-lg">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-semibold text-indigo-800 dark:text-indigo-200">VIX (Fear Index)</span>
           <span className="text-xs text-indigo-600 dark:text-indigo-400">Current: 18.5</span>
@@ -319,7 +313,7 @@ icon: 'chart-mixed'
         </div>
       </div>
 
-      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+      <div className="bg-slate-800/50 p-4 rounded-lg">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-semibold text-indigo-800 dark:text-indigo-200">Yield Curve (10Y-2Y)</span>
           <span className="text-xs text-indigo-600 dark:text-indigo-400">Current: +1.2%</span>
@@ -329,7 +323,7 @@ icon: 'chart-mixed'
         </div>
       </div>
 
-      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg">
+      <div className="bg-slate-800/50 p-4 rounded-lg">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-semibold text-indigo-800 dark:text-indigo-200">Market Breadth</span>
           <span className="text-xs text-indigo-600 dark:text-indigo-400">S&P: 67% above 200MA</span>
@@ -341,12 +335,12 @@ icon: 'chart-mixed'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 p-6 rounded-xl border border-orange-200 dark:border-orange-800">
-    <h4 className="text-lg font-bold text-orange-900 dark:text-orange-100 mb-4">🚨 Crisis Warning Signs</h4>
+  <div className="bg-slate-900/50">
+    <h4 className="text-lg font-bold text-orange-900 dark:text-orange-100 mb-4">alert-circle Crisis Warning Signs</h4>
 
     <div className="space-y-3">
-      <div className="flex items-center gap-3 p-3 bg-white/70 dark:bg-slate-800/70 rounded-lg">
-        <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
+      <div className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg">
+        <div className="w-6 h-6 bg-slate-800 rounded-full flex items-center justify-center">
           <span className="text-white text-xs">!</span>
         </div>
         <div className="text-sm text-orange-800 dark:text-orange-200">
@@ -354,8 +348,8 @@ icon: 'chart-mixed'
         </div>
       </div>
 
-      <div className="flex items-center gap-3 p-3 bg-white/70 dark:bg-slate-800/70 rounded-lg">
-        <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
+      <div className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg">
+        <div className="w-6 h-6 bg-slate-800 rounded-full flex items-center justify-center">
           <span className="text-white text-xs">!</span>
         </div>
         <div className="text-sm text-orange-800 dark:text-orange-200">
@@ -363,8 +357,8 @@ icon: 'chart-mixed'
         </div>
       </div>
 
-      <div className="flex items-center gap-3 p-3 bg-white/70 dark:bg-slate-800/70 rounded-lg">
-        <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
+      <div className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg">
+        <div className="w-6 h-6 bg-slate-800 rounded-full flex items-center justify-center">
           <span className="text-white text-xs">!</span>
         </div>
         <div className="text-sm text-orange-800 dark:text-orange-200">
@@ -372,8 +366,8 @@ icon: 'chart-mixed'
         </div>
       </div>
 
-      <div className="flex items-center gap-3 p-3 bg-white/70 dark:bg-slate-800/70 rounded-lg">
-        <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
+      <div className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg">
+        <div className="w-6 h-6 bg-slate-800 rounded-full flex items-center justify-center">
           <span className="text-white text-xs">!</span>
         </div>
         <div className="text-sm text-orange-800 dark:text-orange-200">
@@ -386,48 +380,48 @@ icon: 'chart-mixed'
 
 ## How to Adapt Your Strategy
 
-<div className="bg-gradient-to-br from-violet-50 to-fuchsia-50 dark:from-violet-900/20 dark:to-fuchsia-900/20 p-8 rounded-xl border border-violet-200 dark:border-violet-800 my-8">
-  <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-6 text-center">Regime-Based Investment Strategies</h3>
+<div className="bg-slate-900/50">
+  <h3 className="text-xl font-bold text-slate-200 mb-6 text-center">Regime-Based Investment Strategies</h3>
 
   <div className="overflow-x-auto">
     <table className="w-full">
       <thead>
         <tr className="border-b border-violet-200 dark:border-violet-700">
-          <th className="text-left p-4 font-semibold text-slate-700 dark:text-slate-300">Market Regime</th>
-          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">Asset Allocation</th>
-          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">Strategy</th>
-          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">Risk Level</th>
+          <th className="text-left p-4 font-semibold text-slate-300">Market Regime</th>
+          <th className="text-center p-4 font-semibold text-slate-300">Asset Allocation</th>
+          <th className="text-center p-4 font-semibold text-slate-300">Strategy</th>
+          <th className="text-center p-4 font-semibold text-slate-300">Risk Level</th>
         </tr>
       </thead>
       <tbody>
         <tr className="border-b border-violet-100 dark:border-violet-800 hover:bg-violet-50 dark:hover:bg-violet-900/20">
           <td className="p-4 font-medium text-emerald-600 dark:text-emerald-400">Bull Market</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">80% Stocks, 20% Bonds</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">Growth, Momentum</td>
+          <td className="text-center p-4 text-slate-300">80% Stocks, 20% Bonds</td>
+          <td className="text-center p-4 text-slate-300">Growth, Momentum</td>
           <td className="text-center p-4">
             <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 px-2 py-1 rounded text-xs">HIGH</span>
           </td>
         </tr>
         <tr className="border-b border-violet-100 dark:border-violet-800 hover:bg-violet-50 dark:hover:bg-violet-900/20">
           <td className="p-4 font-medium text-red-600 dark:text-red-400">Bear Market</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">40% Stocks, 60% Bonds</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">Value, Quality</td>
+          <td className="text-center p-4 text-slate-300">40% Stocks, 60% Bonds</td>
+          <td className="text-center p-4 text-slate-300">Value, Quality</td>
           <td className="text-center p-4">
             <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded text-xs">LOW</span>
           </td>
         </tr>
         <tr className="border-b border-violet-100 dark:border-violet-800 hover:bg-violet-50 dark:hover:bg-violet-900/20">
           <td className="p-4 font-medium text-orange-600 dark:text-orange-400">High Volatility</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">50% Stocks, 30% Bonds, 20% Cash</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">Defensive, Hedged</td>
+          <td className="text-center p-4 text-slate-300">50% Stocks, 30% Bonds, 20% Cash</td>
+          <td className="text-center p-4 text-slate-300">Defensive, Hedged</td>
           <td className="text-center p-4">
             <span className="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 px-2 py-1 rounded text-xs">MED</span>
           </td>
         </tr>
         <tr className="hover:bg-violet-50 dark:hover:bg-violet-900/20">
           <td className="p-4 font-medium text-blue-600 dark:text-blue-400">Low Volatility</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">70% Stocks, 30% Bonds</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">Carry, Income</td>
+          <td className="text-center p-4 text-slate-300">70% Stocks, 30% Bonds</td>
+          <td className="text-center p-4 text-slate-300">Carry, Income</td>
           <td className="text-center p-4">
             <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-2 py-1 rounded text-xs">MED</span>
           </td>
@@ -437,10 +431,10 @@ icon: 'chart-mixed'
   </div>
 </div>
 
-<div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-6 my-8">
+<div className="bg-amber-50 dark:bg-amber-900/20 border border-slate-700 rounded-lg p-6 my-8">
   <div className="flex items-start gap-4">
-    <div className="w-8 h-8 bg-amber-500 rounded-xl flex items-center justify-center flex-shrink-0">
-      <span className="text-white text-lg">💡</span>
+    <div className="w-8 h-8 bg-slate-800 rounded-xl flex items-center justify-center flex-shrink-0">
+      <span className="text-white text-lg">lightbulb</span>
     </div>
     <div>
       <h4 className="text-amber-800 dark:text-amber-200 font-bold mb-2">Key Takeaway</h4>

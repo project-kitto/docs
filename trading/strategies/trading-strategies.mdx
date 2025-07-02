@@ -8,37 +8,44 @@ icon: 'chess-king'
   <Icon icon="chess-king" size={16} />
   <span>18 min read</span>
   <span>•</span>
-  <span>Last updated: July 2025</span>
+  <span>Last updated: January 2025</span>
 </div>
-
-<Frame>
-  <img
-    className="block dark:hidden"
-    src="/images/trading-strategies-light.png"
-    alt="Trading Strategies Overview"
-  />
-  <img
-    className="hidden dark:block"
-    src="/images/trading-strategies-dark.png"
-    alt="Trading Strategies Overview"
-  />
-</Frame>
 
 ## Trading Strategy Overview
 
-<div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-blue-50 dark:from-emerald-900/20 dark:via-teal-900/20 dark:to-blue-900/20 p-6 rounded-xl border border-emerald-200 dark:border-emerald-800 my-8">
+<div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700">
   <div className="flex items-center gap-4 mb-4">
-    <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-500 rounded-xl flex items-center justify-center">
-      <span className="text-white text-2xl">🎯</span>
+    <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700">
+      <Icon icon="target" size={24} className="text-slate-300" />
     </div>
     <div>
-      <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200">Strategic Approach to Markets</h3>
-      <p className="text-slate-600 dark:text-slate-400 text-sm">Different time horizons, risk profiles, and methodologies</p>
+      <h3 className="text-xl font-bold text-slate-200">Strategic Approach to Markets</h3>
+      <p className="text-slate-400 text-sm">Different time horizons, risk profiles, and methodologies</p>
     </div>
   </div>
-  <p className="text-slate-700 dark:text-slate-300">
-    Trading strategies are systematic approaches to buying and selling securities. Each strategy has its own risk-reward profile, time horizon, and skill requirements. Understanding these differences is crucial for successful trading.
+  <p className="text-slate-300">
+    Trading strategies are systematic approaches to buying and selling securities. Each strategy has its own risk-reward profile, time horizon, and skill requirements. Understanding these differences is crucial for successful trading and investing.
   </p>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+    <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+      <h4 className="text-slate-200 font-semibold mb-2">Key Considerations</h4>
+      <ul className="text-slate-300 text-sm space-y-1">
+        <li>• Time commitment and availability</li>
+        <li>• Risk tolerance and capital size</li>
+        <li>• Skill level and experience</li>
+        <li>• Market conditions and volatility</li>
+      </ul>
+    </div>
+    <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+      <h4 className="text-slate-200 font-semibold mb-2">Success Factors</h4>
+      <ul className="text-slate-300 text-sm space-y-1">
+        <li>• Consistent strategy execution</li>
+        <li>• Proper risk management</li>
+        <li>• Emotional discipline</li>
+        <li>• Continuous learning and adaptation</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 ## Strategy Classification by Time Horizon
@@ -52,113 +59,129 @@ icon: 'chess-king'
   </TabsList>
 
   <TabsContent value="scalping" className="mt-6">
-    <div className="bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 p-6 rounded-xl border border-red-200 dark:border-red-800">
+    <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700">
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-red-500 rounded-xl flex items-center justify-center">
-          <span className="text-white text-lg">⚡</span>
+        <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700">
+          <Icon icon="bolt" size={20} className="text-slate-300" />
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Scalping (Seconds to Minutes)</h3>
-          <p className="text-slate-600 dark:text-slate-400 text-sm">Ultra-short term, high-frequency trading</p>
+          <h3 className="text-lg font-semibold text-slate-200">Scalping (Seconds to Minutes)</h3>
+          <p className="text-slate-400 text-sm">Ultra-short term, high-frequency trading</p>
         </div>
+      </div>
+
+      <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+        <p className="text-slate-300 text-sm">
+          <strong>What is Scalping?</strong> Scalping involves making dozens or hundreds of trades per day, holding positions for seconds to minutes. Scalpers profit from small price movements in highly liquid stocks, often using leverage to amplify returns.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         <div>
-          <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">✅ Pros</h4>
-          <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
-            <li>• Quick profits</li>
-            <li>• Limited market exposure</li>
-            <li>• Multiple opportunities daily</li>
-            <li>• Reduced overnight risk</li>
+          <h4 className="font-semibold text-slate-300 mb-2">Advantages</h4>
+          <ul className="text-sm text-slate-400 space-y-1">
+            <li>• Quick profits with small price movements</li>
+            <li>• Limited market exposure reduces risk</li>
+            <li>• Multiple opportunities throughout the day</li>
+            <li>• No overnight position risk</li>
+            <li>• Can profit in both up and down markets</li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">❌ Cons</h4>
-          <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
-            <li>• High stress and pressure</li>
-            <li>• Significant transaction costs</li>
-            <li>• Requires full-time attention</li>
-            <li>• Advanced technical skills needed</li>
+          <h4 className="font-semibold text-slate-300 mb-2">Disadvantages</h4>
+          <ul className="text-sm text-slate-400 space-y-1">
+            <li>• Extremely high stress and pressure</li>
+            <li>• Significant transaction costs eat profits</li>
+            <li>• Requires full-time market attention</li>
+            <li>• Advanced technical skills essential</li>
+            <li>• High capital requirements for meaningful profits</li>
           </ul>
         </div>
       </div>
 
       <div className="mt-4">
-        <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">Key Requirements</h4>
+        <h4 className="font-semibold text-slate-300 mb-2">Essential Requirements</h4>
         <div className="flex flex-wrap gap-2">
-          <span className="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full text-xs">Low Latency</span>
-          <span className="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full text-xs">Level 2 Data</span>
-          <span className="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full text-xs">Advanced Charting</span>
-          <span className="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full text-xs">Risk Management</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs border border-slate-700">Low Latency Connection</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs border border-slate-700">Level 2 Market Data</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs border border-slate-700">Advanced Charting Platform</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs border border-slate-700">Strict Risk Management</span>
         </div>
       </div>
     </div>
   </TabsContent>
 
   <TabsContent value="day" className="mt-6">
-    <div className="bg-gradient-to-br from-orange-50 to-yellow-50 dark:from-orange-900/20 dark:to-yellow-900/20 p-6 rounded-xl border border-orange-200 dark:border-orange-800">
+    <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700">
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center">
-          <span className="text-white text-lg">🌅</span>
+        <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700">
+          <Icon icon="sun" size={20} className="text-slate-300" />
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Day Trading (Minutes to Hours)</h3>
-          <p className="text-slate-600 dark:text-slate-400 text-sm">Intraday positions, closed before market close</p>
+          <h3 className="text-lg font-semibold text-slate-200">Day Trading (Minutes to Hours)</h3>
+          <p className="text-slate-400 text-sm">Intraday positions, closed before market close</p>
         </div>
+      </div>
+
+      <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+        <p className="text-slate-300 text-sm">
+          <strong>Day Trading Explained:</strong> Day traders open and close all positions within the same trading day, never holding overnight. This strategy focuses on capturing intraday price movements using technical analysis, news events, and market momentum.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         <div>
-          <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">✅ Pros</h4>
-          <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
-            <li>• No overnight risk</li>
-            <li>• High profit potential</li>
-            <li>• Active market participation</li>
-            <li>• Flexible schedule</li>
+          <h4 className="font-semibold text-slate-300 mb-2">Advantages</h4>
+          <ul className="text-sm text-slate-400 space-y-1">
+            <li>• No overnight market risk exposure</li>
+            <li>• High profit potential with leverage</li>
+            <li>• Active market participation and control</li>
+            <li>• Flexible daily schedule</li>
+            <li>• Quick feedback on trading decisions</li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">❌ Cons</h4>
-          <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
-            <li>• High stress levels</li>
-            <li>• Significant capital required</li>
-            <li>• Pattern Day Trader rules</li>
-            <li>• Emotional challenges</li>
+          <h4 className="font-semibold text-slate-300 mb-2">Disadvantages</h4>
+          <ul className="text-sm text-slate-400 space-y-1">
+            <li>• High stress and emotional pressure</li>
+            <li>• Minimum $25,000 capital required (PDT rule)</li>
+            <li>• Pattern Day Trader restrictions</li>
+            <li>• Significant time commitment required</li>
+            <li>• High frequency trading costs</li>
           </ul>
         </div>
       </div>
 
       <div className="mt-4">
-        <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">Popular Day Trading Strategies</h4>
+        <h4 className="font-semibold text-slate-300 mb-2">Popular Day Trading Strategies</h4>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-          <span className="px-3 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-lg text-xs text-center">Momentum</span>
-          <span className="px-3 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-lg text-xs text-center">Breakouts</span>
-          <span className="px-3 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-lg text-xs text-center">Reversals</span>
-          <span className="px-3 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-lg text-xs text-center">Gap Trading</span>
+          <span className="px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs text-center border border-slate-700">Momentum Trading</span>
+          <span className="px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs text-center border border-slate-700">Breakout Trading</span>
+          <span className="px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs text-center border border-slate-700">Reversal Trading</span>
+          <span className="px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs text-center border border-slate-700">Gap Trading</span>
         </div>
       </div>
     </div>
   </TabsContent>
 
   <TabsContent value="swing" className="mt-6">
-    <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-xl border border-blue-200 dark:border-blue-800">
+    <div className="bg-slate-900/50">
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center">
-          <span className="text-white text-lg">📈</span>
+        <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+          <span className="text-white text-lg">trending-up</span>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Swing Trading (Days to Weeks)</h3>
-          <p className="text-slate-600 dark:text-slate-400 text-sm">Medium-term positions capturing price swings</p>
+          <h3 className="text-lg font-semibold text-slate-200">Swing Trading (Days to Weeks)</h3>
+          <p className="text-slate-400 text-sm">Medium-term positions capturing price swings</p>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         <div>
-          <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">✅ Pros</h4>
-          <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+          <h4 className="font-semibold text-slate-300 mb-2">Advantages</h4>
+          <ul className="text-sm text-slate-400 space-y-1">
             <li>• Less time-intensive</li>
             <li>• Lower transaction costs</li>
             <li>• Better work-life balance</li>
@@ -167,8 +190,8 @@ icon: 'chess-king'
         </div>
 
         <div>
-          <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">❌ Cons</h4>
-          <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+          <h4 className="font-semibold text-slate-300 mb-2">Disadvantages</h4>
+          <ul className="text-sm text-slate-400 space-y-1">
             <li>• Overnight and weekend risk</li>
             <li>• Requires patience</li>
             <li>• Market gap risk</li>
@@ -178,32 +201,32 @@ icon: 'chess-king'
       </div>
 
       <div className="mt-4">
-        <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">Common Swing Trading Patterns</h4>
+        <h4 className="font-semibold text-slate-300 mb-2">Common Swing Trading Patterns</h4>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-          <span className="px-3 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-lg text-xs text-center">Cup & Handle</span>
-          <span className="px-3 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-lg text-xs text-center">Flag Patterns</span>
-          <span className="px-3 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-lg text-xs text-center">Support/Resistance</span>
+          <span className="px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs text-center">Cup & Handle</span>
+          <span className="px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs text-center">Flag Patterns</span>
+          <span className="px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs text-center">Support/Resistance</span>
         </div>
       </div>
     </div>
   </TabsContent>
 
   <TabsContent value="position" className="mt-6">
-    <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-xl border border-purple-200 dark:border-purple-800">
+    <div className="bg-slate-900/50">
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-purple-500 rounded-xl flex items-center justify-center">
-          <span className="text-white text-lg">🎯</span>
+        <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+          <span className="text-white text-lg">target</span>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Position Trading (Weeks to Months)</h3>
-          <p className="text-slate-600 dark:text-slate-400 text-sm">Long-term positions based on major trends</p>
+          <h3 className="text-lg font-semibold text-slate-200">Position Trading (Weeks to Months)</h3>
+          <p className="text-slate-400 text-sm">Long-term positions based on major trends</p>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         <div>
-          <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">✅ Pros</h4>
-          <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+          <h4 className="font-semibold text-slate-300 mb-2">Advantages</h4>
+          <ul className="text-sm text-slate-400 space-y-1">
             <li>• Minimal time commitment</li>
             <li>• Lower stress levels</li>
             <li>• Tax advantages (long-term gains)</li>
@@ -212,8 +235,8 @@ icon: 'chess-king'
         </div>
 
         <div>
-          <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">❌ Cons</h4>
-          <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+          <h4 className="font-semibold text-slate-300 mb-2">Disadvantages</h4>
+          <ul className="text-sm text-slate-400 space-y-1">
             <li>• Extended market exposure</li>
             <li>• Larger capital requirements</li>
             <li>• Fewer opportunities</li>
@@ -223,10 +246,10 @@ icon: 'chess-king'
       </div>
 
       <div className="mt-4">
-        <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-2">Position Trading Focus Areas</h4>
+        <h4 className="font-semibold text-slate-300 mb-2">Position Trading Focus Areas</h4>
         <div className="grid grid-cols-2 gap-2">
-          <span className="px-3 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-lg text-xs text-center">Macro Trends</span>
-          <span className="px-3 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-lg text-xs text-center">Fundamental Analysis</span>
+          <span className="px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs text-center">Macro Trends</span>
+          <span className="px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs text-center">Fundamental Analysis</span>
         </div>
       </div>
     </div>
@@ -237,158 +260,158 @@ icon: 'chess-king'
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
 
-  <div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 p-6 rounded-xl border border-emerald-200 dark:border-emerald-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-lg">📊</span>
+      <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+        <span className="text-white text-lg">bar-chart</span>
       </div>
-      <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Momentum Trading</h3>
+      <h3 className="text-lg font-semibold text-slate-200">Momentum Trading</h3>
     </div>
-    <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
+    <p className="text-slate-400 text-sm mb-4">
       Following securities that are moving strongly in one direction on high volume.
     </p>
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Strong directional moves</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Strong directional moves</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">High volume confirmation</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">High volume confirmation</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">News catalyst driven</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">News catalyst driven</span>
       </div>
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-xl border border-blue-200 dark:border-blue-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-lg">🔄</span>
+      <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+        <span className="text-white text-lg">refresh</span>
       </div>
-      <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Mean Reversion</h3>
+      <h3 className="text-lg font-semibold text-slate-200">Mean Reversion</h3>
     </div>
-    <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
+    <p className="text-slate-400 text-sm mb-4">
       Betting that prices will return to their historical average after extreme moves.
     </p>
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Oversold/overbought conditions</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Oversold/overbought conditions</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Statistical analysis</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Statistical analysis</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Range-bound markets</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Range-bound markets</span>
       </div>
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-xl border border-purple-200 dark:border-purple-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-purple-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-lg">💰</span>
+      <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+        <span className="text-white text-lg">dollar-sign</span>
       </div>
-      <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Arbitrage</h3>
+      <h3 className="text-lg font-semibold text-slate-200">Arbitrage</h3>
     </div>
-    <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
+    <p className="text-slate-400 text-sm mb-4">
       Exploiting price differences of the same asset across different markets.
     </p>
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Risk-free profit</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Risk-free profit</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Market inefficiencies</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Market inefficiencies</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Advanced technology required</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Advanced technology required</span>
       </div>
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 p-6 rounded-xl border border-orange-200 dark:border-orange-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center">
+      <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
         <span className="text-white text-lg">🎢</span>
       </div>
-      <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Breakout Trading</h3>
+      <h3 className="text-lg font-semibold text-slate-200">Breakout Trading</h3>
     </div>
-    <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
+    <p className="text-slate-400 text-sm mb-4">
       Entering positions when price breaks through established support or resistance levels.
     </p>
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Technical pattern recognition</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Technical pattern recognition</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Volume confirmation</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Volume confirmation</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">False breakout risk</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">False breakout risk</span>
       </div>
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-teal-50 to-green-50 dark:from-teal-900/20 dark:to-green-900/20 p-6 rounded-xl border border-teal-200 dark:border-teal-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-teal-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-lg">📈</span>
+      <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+        <span className="text-white text-lg">trending-up</span>
       </div>
-      <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Trend Following</h3>
+      <h3 className="text-lg font-semibold text-slate-200">Trend Following</h3>
     </div>
-    <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
+    <p className="text-slate-400 text-sm mb-4">
       Identifying and riding established trends until they show signs of reversal.
     </p>
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-teal-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Moving averages</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Moving averages</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-teal-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Trend strength indicators</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Trend strength indicators</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-teal-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Risk management crucial</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Risk management crucial</span>
       </div>
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 p-6 rounded-xl border border-indigo-200 dark:border-indigo-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-indigo-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-lg">⚖️</span>
+      <div className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+        <span className="text-white text-lg">scale</span>
       </div>
-      <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Pairs Trading</h3>
+      <h3 className="text-lg font-semibold text-slate-200">Pairs Trading</h3>
     </div>
-    <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
+    <p className="text-slate-400 text-sm mb-4">
       Trading two correlated securities when their price relationship diverges from historical norms.
     </p>
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-indigo-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Market neutral strategy</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Market neutral strategy</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-indigo-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Statistical relationships</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Statistical relationships</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 bg-indigo-500 rounded-full"></span>
-        <span className="text-xs text-slate-600 dark:text-slate-400">Reduced market risk</span>
+        <span className="w-2 h-2 bg-slate-800 rounded-full"></span>
+        <span className="text-xs text-slate-400">Reduced market risk</span>
       </div>
     </div>
   </div>
@@ -397,51 +420,51 @@ icon: 'chess-king'
 
 ## Risk Management in Trading Strategies
 
-<div className="bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 dark:from-red-900/20 dark:via-orange-900/20 dark:to-yellow-900/20 p-6 rounded-xl border border-red-200 dark:border-red-800 my-8">
-  <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-4">🛡️ Essential Risk Management Principles</h3>
+<div className="bg-slate-900/50">
+  <h3 className="text-xl font-bold text-slate-200 mb-4">shield Essential Risk Management Principles</h3>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div>
-      <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-3">Position Sizing Rules</h4>
+      <h4 className="font-semibold text-slate-300 mb-3">Position Sizing Rules</h4>
       <div className="space-y-3">
         <div className="flex items-start gap-3">
-          <span className="w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+          <span className="w-6 h-6 bg-slate-800 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <div>
-            <p className="font-medium text-slate-700 dark:text-slate-300">1% Risk Rule</p>
-            <p className="text-sm text-slate-600 dark:text-slate-400">Never risk more than 1% of capital on a single trade</p>
+            <p className="font-medium text-slate-300">1% Risk Rule</p>
+            <p className="text-sm text-slate-400">Never risk more than 1% of capital on a single trade</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
-          <span className="w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+          <span className="w-6 h-6 bg-slate-800 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <div>
-            <p className="font-medium text-slate-700 dark:text-slate-300">Kelly Criterion</p>
-            <p className="text-sm text-slate-600 dark:text-slate-400">Optimal position size based on win rate and risk/reward</p>
+            <p className="font-medium text-slate-300">Kelly Criterion</p>
+            <p className="text-sm text-slate-400">Optimal position size based on win rate and risk/reward</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
-          <span className="w-6 h-6 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+          <span className="w-6 h-6 bg-slate-800 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <div>
-            <p className="font-medium text-slate-700 dark:text-slate-300">Portfolio Heat</p>
-            <p className="text-sm text-slate-600 dark:text-slate-400">Total risk across all open positions</p>
+            <p className="font-medium text-slate-300">Portfolio Heat</p>
+            <p className="text-sm text-slate-400">Total risk across all open positions</p>
           </div>
         </div>
       </div>
     </div>
 
     <div>
-      <h4 className="font-semibold text-slate-700 dark:text-slate-300 mb-3">Stop Loss Strategies</h4>
+      <h4 className="font-semibold text-slate-300 mb-3">Stop Loss Strategies</h4>
       <div className="space-y-3">
-        <div className="p-3 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
-          <p className="font-medium text-slate-700 dark:text-slate-300 text-sm">Technical Stop Loss</p>
-          <p className="text-xs text-slate-600 dark:text-slate-400">Based on support/resistance levels</p>
+        <div className="p-3 bg-slate-900/50 dark:bg-slate-800 rounded-lg border border-slate-700">
+          <p className="font-medium text-slate-300 text-sm">Technical Stop Loss</p>
+          <p className="text-xs text-slate-400">Based on support/resistance levels</p>
         </div>
-        <div className="p-3 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
-          <p className="font-medium text-slate-700 dark:text-slate-300 text-sm">Percentage Stop Loss</p>
-          <p className="text-xs text-slate-600 dark:text-slate-400">Fixed percentage from entry price</p>
+        <div className="p-3 bg-slate-900/50 dark:bg-slate-800 rounded-lg border border-slate-700">
+          <p className="font-medium text-slate-300 text-sm">Percentage Stop Loss</p>
+          <p className="text-xs text-slate-400">Fixed percentage from entry price</p>
         </div>
-        <div className="p-3 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
-          <p className="font-medium text-slate-700 dark:text-slate-300 text-sm">Trailing Stop Loss</p>
-          <p className="text-xs text-slate-600 dark:text-slate-400">Adjusts with favorable price movement</p>
+        <div className="p-3 bg-slate-900/50 dark:bg-slate-800 rounded-lg border border-slate-700">
+          <p className="font-medium text-slate-300 text-sm">Trailing Stop Loss</p>
+          <p className="text-xs text-slate-400">Adjusts with favorable price movement</p>
         </div>
       </div>
     </div>
@@ -451,45 +474,45 @@ icon: 'chess-king'
 ## Strategy Performance Metrics
 
 <div className="overflow-x-auto my-8">
-  <table className="w-full border-collapse border border-slate-300 dark:border-slate-700 rounded-lg overflow-hidden">
+  <table className="w-full border-collapse border border-slate-700">
     <thead>
-      <tr className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30">
-        <th className="border border-slate-300 dark:border-slate-700 p-3 text-left font-semibold text-slate-700 dark:text-slate-300">Metric</th>
-        <th className="border border-slate-300 dark:border-slate-700 p-3 text-left font-semibold text-slate-700 dark:text-slate-300">Description</th>
-        <th className="border border-slate-300 dark:border-slate-700 p-3 text-left font-semibold text-slate-700 dark:text-slate-300">Good Range</th>
-        <th className="border border-slate-300 dark:border-slate-700 p-3 text-left font-semibold text-slate-700 dark:text-slate-300">Calculation</th>
+      <tr className="bg-slate-800/50">
+        <th className="border border-slate-700">Metric</th>
+        <th className="border border-slate-700">Description</th>
+        <th className="border border-slate-700">Good Range</th>
+        <th className="border border-slate-700">Calculation</th>
       </tr>
     </thead>
     <tbody>
       <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-        <td className="border border-slate-300 dark:border-slate-700 p-3 font-medium text-slate-700 dark:text-slate-300">Win Rate</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">Percentage of profitable trades</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">&gt;50%</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400 text-sm">Winning trades / Total trades</td>
+        <td className="border border-slate-700">Win Rate</td>
+        <td className="border border-slate-700">Percentage of profitable trades</td>
+        <td className="border border-slate-700">&gt;50%</td>
+        <td className="border border-slate-700">Winning trades / Total trades</td>
       </tr>
       <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-        <td className="border border-slate-300 dark:border-slate-700 p-3 font-medium text-slate-700 dark:text-slate-300">Risk/Reward Ratio</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">Average profit vs average loss</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">&gt;1:1</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400 text-sm">Avg win / Avg loss</td>
+        <td className="border border-slate-700">Risk/Reward Ratio</td>
+        <td className="border border-slate-700">Average profit vs average loss</td>
+        <td className="border border-slate-700">&gt;1:1</td>
+        <td className="border border-slate-700">Avg win / Avg loss</td>
       </tr>
       <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-        <td className="border border-slate-300 dark:border-slate-700 p-3 font-medium text-slate-700 dark:text-slate-300">Sharpe Ratio</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">Risk-adjusted returns</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">&gt;1.0</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400 text-sm">(Return - Risk-free rate) / Volatility</td>
+        <td className="border border-slate-700">Sharpe Ratio</td>
+        <td className="border border-slate-700">Risk-adjusted returns</td>
+        <td className="border border-slate-700">&gt;1.0</td>
+        <td className="border border-slate-700">(Return - Risk-free rate) / Volatility</td>
       </tr>
       <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-        <td className="border border-slate-300 dark:border-slate-700 p-3 font-medium text-slate-700 dark:text-slate-300">Maximum Drawdown</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">Largest peak-to-trough decline</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">&lt;20%</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400 text-sm">Max loss from peak to trough</td>
+        <td className="border border-slate-700">Maximum Drawdown</td>
+        <td className="border border-slate-700">Largest peak-to-trough decline</td>
+        <td className="border border-slate-700">&lt;20%</td>
+        <td className="border border-slate-700">Max loss from peak to trough</td>
       </tr>
       <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-        <td className="border border-slate-300 dark:border-slate-700 p-3 font-medium text-slate-700 dark:text-slate-300">Profit Factor</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">Total profits vs total losses</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400">&gt;1.25</td>
-        <td className="border border-slate-300 dark:border-slate-700 p-3 text-slate-600 dark:text-slate-400 text-sm">Gross profit / Gross loss</td>
+        <td className="border border-slate-700">Profit Factor</td>
+        <td className="border border-slate-700">Total profits vs total losses</td>
+        <td className="border border-slate-700">&gt;1.25</td>
+        <td className="border border-slate-700">Gross profit / Gross loss</td>
       </tr>
     </tbody>
   </table>
@@ -498,32 +521,32 @@ icon: 'chess-king'
 ## Building Your Trading Strategy
 
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
-  <div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 p-6 rounded-xl border border-emerald-200 dark:border-emerald-800">
-    <div className="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center mb-4">
-      <span className="text-white text-xl">1️⃣</span>
+  <div className="bg-slate-900/50">
+    <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-4">
+      <span className="text-white text-xl">1</span>
     </div>
-    <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200 mb-2">Define Your Edge</h3>
-    <p className="text-slate-600 dark:text-slate-400 text-sm">
+    <h3 className="text-lg font-semibold text-slate-200 mb-2">Define Your Edge</h3>
+    <p className="text-slate-400 text-sm">
       Identify what gives you an advantage in the market - could be technical patterns, fundamental analysis, or market inefficiencies.
     </p>
   </div>
 
-  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-xl border border-blue-200 dark:border-blue-800">
-    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-4">
-      <span className="text-white text-xl">2️⃣</span>
+  <div className="bg-slate-900/50">
+    <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-4">
+      <span className="text-white text-xl">2</span>
     </div>
-    <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200 mb-2">Backtest & Validate</h3>
-    <p className="text-slate-600 dark:text-slate-400 text-sm">
+    <h3 className="text-lg font-semibold text-slate-200 mb-2">Backtest & Validate</h3>
+    <p className="text-slate-400 text-sm">
       Test your strategy on historical data to understand its performance characteristics and potential profitability.
     </p>
   </div>
 
-  <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-xl border border-purple-200 dark:border-purple-800">
-    <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mb-4">
-      <span className="text-white text-xl">3️⃣</span>
+  <div className="bg-slate-900/50">
+    <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-4">
+      <span className="text-white text-xl">3</span>
     </div>
-    <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200 mb-2">Risk Management</h3>
-    <p className="text-slate-600 dark:text-slate-400 text-sm">
+    <h3 className="text-lg font-semibold text-slate-200 mb-2">Risk Management</h3>
+    <p className="text-slate-400 text-sm">
       Implement robust risk management rules including position sizing, stop losses, and maximum portfolio risk limits.
     </p>
   </div>

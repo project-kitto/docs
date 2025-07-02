@@ -8,46 +8,54 @@ icon: 'building-office'
   <Icon icon="building-office" size={16} />
   <span>12 min read</span>
   <span>•</span>
-  <span>Last updated: July 2025</span>
+  <span>Last updated: January 2025</span>
 </div>
-
-<Frame>
-  <img
-    className="block dark:hidden"
-    src="/images/exchanges-overview-light.png"
-    alt="Global Stock Exchanges Dashboard"
-  />
-  <img
-    className="hidden dark:block"
-    src="/images/exchanges-overview-dark.png"
-    alt="Global Stock Exchanges Dashboard"
-  />
-</Frame>
 
 ## What is a Stock Exchange?
 
-<div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-blue-900/20 dark:via-indigo-900/20 dark:to-purple-900/20 p-6 rounded-xl border border-blue-200 dark:border-blue-800 my-8">
+<div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 my-8">
   <div className="flex items-center gap-4 mb-4">
-    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
-      <span className="text-white text-2xl">🏛️</span>
+    <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-600">
+      <Icon icon="bank" size={24} className="text-slate-300" />
     </div>
     <div>
-      <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200">Global Trading Marketplaces</h3>
-      <p className="text-slate-600 dark:text-slate-400 text-sm">Where buyers and sellers meet to trade securities</p>
+      <h3 className="text-xl font-bold text-slate-200">Global Trading Marketplaces</h3>
+      <p className="text-slate-400 text-sm">Where buyers and sellers meet to trade securities</p>
     </div>
   </div>
-  <p className="text-slate-700 dark:text-slate-300">
+  <p className="text-slate-300">
     A stock exchange is a regulated marketplace where securities like stocks, bonds, and other financial instruments are bought and sold. Exchanges provide the infrastructure, rules, and oversight necessary for fair and orderly trading.
   </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+    <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+      <h4 className="text-slate-200 font-semibold mb-2">Exchange Functions</h4>
+      <ul className="text-slate-300 text-sm space-y-1">
+        <li>• Facilitate price discovery</li>
+        <li>• Ensure fair and orderly trading</li>
+        <li>• Provide market liquidity</li>
+        <li>• Enforce trading regulations</li>
+      </ul>
+    </div>
+    <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+      <h4 className="text-slate-200 font-semibold mb-2">Trading Mechanisms</h4>
+      <ul className="text-slate-300 text-sm space-y-1">
+        <li>• Electronic order matching</li>
+        <li>• Market makers and specialists</li>
+        <li>• Auction-based price setting</li>
+        <li>• Real-time settlement systems</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 ## Major US Stock Exchanges
 
 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 rounded-xl border border-blue-200 dark:border-blue-800">
+  <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
-        <span className="text-white text-xl font-bold">NYSE</span>
+      <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-600">
+        <span className="text-slate-300 text-xl font-bold">NYSE</span>
       </div>
       <div>
         <h4 className="text-xl font-bold text-blue-900 dark:text-blue-100">New York Stock Exchange</h4>
@@ -56,7 +64,7 @@ icon: 'building-office'
     </div>
 
     <div className="space-y-4">
-      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg border border-blue-200 dark:border-blue-700">
+      <div className="bg-slate-800/50 p-4 rounded-lg border border-blue-200 dark:border-blue-700">
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
             <div className="text-blue-800 dark:text-blue-200 font-semibold mb-1">Founded</div>
@@ -81,19 +89,19 @@ icon: 'building-office'
         <div className="text-xs font-semibold text-blue-800 dark:text-blue-200 mb-2">Notable Features:</div>
         <div className="space-y-1 text-xs text-blue-700 dark:text-blue-300">
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Largest stock exchange globally</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Home to blue-chip stocks (IBM, Coca-Cola)</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Hybrid trading (floor + electronic)</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-blue-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Strict listing requirements</span>
           </div>
         </div>
@@ -106,9 +114,9 @@ icon: 'building-office'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-xl border border-purple-200 dark:border-purple-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center">
+      <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center">
         <span className="text-white text-lg font-bold">NASDAQ</span>
       </div>
       <div>
@@ -118,7 +126,7 @@ icon: 'building-office'
     </div>
 
     <div className="space-y-4">
-      <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg border border-purple-200 dark:border-purple-700">
+      <div className="bg-slate-800/50 p-4 rounded-lg border border-purple-200 dark:border-purple-700">
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
             <div className="text-purple-800 dark:text-purple-200 font-semibold mb-1">Founded</div>
@@ -143,19 +151,19 @@ icon: 'building-office'
         <div className="text-xs font-semibold text-purple-800 dark:text-purple-200 mb-2">Notable Features:</div>
         <div className="space-y-1 text-xs text-purple-700 dark:text-purple-300">
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-purple-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>First electronic stock exchange</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-purple-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Tech giants (Apple, Microsoft, Google)</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-purple-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Fully electronic trading</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-purple-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Lower listing requirements</span>
           </div>
         </div>
@@ -171,18 +179,18 @@ icon: 'building-office'
 
 ## S&P 500 Index Deep Dive
 
-<div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 p-8 rounded-xl border border-emerald-200 dark:border-emerald-800 my-8">
+<div className="bg-slate-900/50">
   <div className="text-center mb-6">
-    <div className="w-16 h-16 bg-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+    <div className="w-16 h-16 bg-slate-800 rounded-xl flex items-center justify-center mx-auto mb-4">
       <span className="text-white text-2xl font-bold">500</span>
     </div>
-    <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-2">S&P 500 Index</h3>
-    <p className="text-slate-600 dark:text-slate-400">The benchmark of the US stock market</p>
+    <h3 className="text-2xl font-bold text-slate-200 mb-2">S&P 500 Index</h3>
+    <p className="text-slate-400">The benchmark of the US stock market</p>
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div className="bg-white/70 dark:bg-slate-800/70 p-5 rounded-xl border border-emerald-200 dark:border-emerald-700">
-      <h4 className="font-bold text-emerald-900 dark:text-emerald-100 mb-3">📊 Index Composition</h4>
+    <div className="bg-slate-800/50 p-5 rounded-xl border border-emerald-200 dark:border-emerald-700">
+      <h4 className="font-bold text-emerald-900 dark:text-emerald-100 mb-3">bar-chart Index Composition</h4>
       <div className="space-y-2 text-sm text-emerald-800 dark:text-emerald-200">
         <div className="flex justify-between">
           <span>Technology:</span>
@@ -207,8 +215,8 @@ icon: 'building-office'
       </div>
     </div>
 
-    <div className="bg-white/70 dark:bg-slate-800/70 p-5 rounded-xl border border-emerald-200 dark:border-emerald-700">
-      <h4 className="font-bold text-emerald-900 dark:text-emerald-100 mb-3">🏆 Top Holdings</h4>
+    <div className="bg-slate-800/50 p-5 rounded-xl border border-emerald-200 dark:border-emerald-700">
+      <h4 className="font-bold text-emerald-900 dark:text-emerald-100 mb-3">trophy Top Holdings</h4>
       <div className="space-y-2 text-sm text-emerald-800 dark:text-emerald-200">
         <div className="flex justify-between">
           <span>Apple (AAPL):</span>
@@ -233,8 +241,8 @@ icon: 'building-office'
       </div>
     </div>
 
-    <div className="bg-white/70 dark:bg-slate-800/70 p-5 rounded-xl border border-emerald-200 dark:border-emerald-700">
-      <h4 className="font-bold text-emerald-900 dark:text-emerald-100 mb-3">📈 Historical Performance</h4>
+    <div className="bg-slate-800/50 p-5 rounded-xl border border-emerald-200 dark:border-emerald-700">
+      <h4 className="font-bold text-emerald-900 dark:text-emerald-100 mb-3">trending-up Historical Performance</h4>
       <div className="space-y-2 text-sm text-emerald-800 dark:text-emerald-200">
         <div className="flex justify-between">
           <span>1-Year Return:</span>
@@ -273,19 +281,19 @@ icon: 'building-office'
 
 ## Vietnam Stock Exchanges
 
-<div className="bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 dark:from-red-900/20 dark:via-orange-900/20 dark:to-yellow-900/20 p-8 rounded-xl border border-red-200 dark:border-red-800 my-8">
+<div className="bg-slate-900/50">
   <div className="text-center mb-6">
-    <div className="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+    <div className="w-16 h-16 bg-slate-800 rounded-xl flex items-center justify-center mx-auto mb-4">
       <span className="text-white text-xl">🇻🇳</span>
     </div>
-    <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-2">Vietnamese Stock Markets</h3>
-    <p className="text-slate-600 dark:text-slate-400">Emerging market with strong growth potential</p>
+    <h3 className="text-2xl font-bold text-slate-200 mb-2">Vietnamese Stock Markets</h3>
+    <p className="text-slate-400">Emerging market with strong growth potential</p>
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div className="bg-white/70 dark:bg-slate-800/70 p-6 rounded-xl border border-red-200 dark:border-red-700">
+    <div className="bg-slate-800/50 p-6 rounded-xl border border-red-200 dark:border-red-700">
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center">
+        <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
           <span className="text-white text-lg font-bold">HoSE</span>
         </div>
         <h4 className="font-bold text-red-900 dark:text-red-100">Ho Chi Minh Stock Exchange</h4>
@@ -315,24 +323,24 @@ icon: 'building-office'
 
         <div className="space-y-1 text-xs text-red-700 dark:text-red-300">
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Large-cap stocks (Blue chips)</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Banking, real estate, manufacturing</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>T+2 settlement cycle</span>
           </div>
         </div>
       </div>
     </div>
 
-    <div className="bg-white/70 dark:bg-slate-800/70 p-6 rounded-xl border border-orange-200 dark:border-orange-700">
+    <div className="bg-slate-800/50 p-6 rounded-xl border border-orange-200 dark:border-orange-700">
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
+        <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
           <span className="text-white text-lg font-bold">HNX</span>
         </div>
         <h4 className="font-bold text-orange-900 dark:text-orange-100">Hanoi Stock Exchange</h4>
@@ -362,15 +370,15 @@ icon: 'building-office'
 
         <div className="space-y-1 text-xs text-orange-700 dark:text-orange-300">
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-orange-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Small to mid-cap stocks</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-orange-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>Government bonds trading</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-orange-500 rounded-full"></div>
+            <div className="w-1 h-1 bg-slate-800 rounded-full"></div>
             <span>UPCoM market for unlisted companies</span>
           </div>
         </div>
@@ -379,34 +387,34 @@ icon: 'building-office'
   </div>
 
   <div className="mt-6">
-    <h4 className="font-bold text-slate-800 dark:text-slate-200 mb-4">🏆 Top Vietnamese Stocks (VN-Index)</h4>
-    <div className="bg-white/70 dark:bg-slate-800/70 p-4 rounded-lg border border-red-200 dark:border-red-700">
+    <h4 className="font-bold text-slate-200 mb-4">trophy Top Vietnamese Stocks (VN-Index)</h4>
+    <div className="bg-slate-800/50 p-4 rounded-lg border border-red-200 dark:border-red-700">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
         <div className="space-y-2">
           <div className="flex justify-between">
-            <span className="text-slate-700 dark:text-slate-300">Vinhomes (VHM):</span>
+            <span className="text-slate-300">Vinhomes (VHM):</span>
             <span className="font-bold text-red-600 dark:text-red-400">Real Estate</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-slate-700 dark:text-slate-300">Vingroup (VIC):</span>
+            <span className="text-slate-300">Vingroup (VIC):</span>
             <span className="font-bold text-red-600 dark:text-red-400">Conglomerate</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-slate-700 dark:text-slate-300">Bank for Investment (CTG):</span>
+            <span className="text-slate-300">Bank for Investment (CTG):</span>
             <span className="font-bold text-red-600 dark:text-red-400">Banking</span>
           </div>
         </div>
         <div className="space-y-2">
           <div className="flex justify-between">
-            <span className="text-slate-700 dark:text-slate-300">Vietcombank (VCB):</span>
+            <span className="text-slate-300">Vietcombank (VCB):</span>
             <span className="font-bold text-red-600 dark:text-red-400">Banking</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-slate-700 dark:text-slate-300">Bidv Bank (BID):</span>
+            <span className="text-slate-300">Bidv Bank (BID):</span>
             <span className="font-bold text-red-600 dark:text-red-400">Banking</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-slate-700 dark:text-slate-300">Masan Group (MSN):</span>
+            <span className="text-slate-300">Masan Group (MSN):</span>
             <span className="font-bold text-red-600 dark:text-red-400">Consumer Goods</span>
           </div>
         </div>
@@ -418,9 +426,9 @@ icon: 'building-office'
 ## Other Major Global Exchanges
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
-  <div className="bg-gradient-to-br from-blue-50 to-sky-50 dark:from-blue-900/20 dark:to-sky-900/20 p-6 rounded-xl border border-blue-200 dark:border-blue-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+      <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
         <span className="text-white text-lg">🇬🇧</span>
       </div>
       <h4 className="font-bold text-blue-900 dark:text-blue-100">London Stock Exchange</h4>
@@ -442,9 +450,9 @@ icon: 'building-office'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-900/20 dark:to-rose-900/20 p-6 rounded-xl border border-red-200 dark:border-red-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center">
+      <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
         <span className="text-white text-lg">🇯🇵</span>
       </div>
       <h4 className="font-bold text-red-900 dark:text-red-100">Tokyo Stock Exchange</h4>
@@ -466,9 +474,9 @@ icon: 'building-office'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-xl border border-green-200 dark:border-green-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+      <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
         <span className="text-white text-lg">🇨🇳</span>
       </div>
       <h4 className="font-bold text-green-900 dark:text-green-100">Shanghai Stock Exchange</h4>
@@ -490,9 +498,9 @@ icon: 'building-office'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 p-6 rounded-xl border border-orange-200 dark:border-orange-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
+      <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
         <span className="text-white text-lg">🇩🇪</span>
       </div>
       <h4 className="font-bold text-orange-900 dark:text-orange-100">Frankfurt Stock Exchange</h4>
@@ -514,9 +522,9 @@ icon: 'building-office'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-xl border border-purple-200 dark:border-purple-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
+      <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
         <span className="text-white text-lg">🇰🇷</span>
       </div>
       <h4 className="font-bold text-purple-900 dark:text-purple-100">Korea Exchange</h4>
@@ -538,9 +546,9 @@ icon: 'building-office'
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 p-6 rounded-xl border border-teal-200 dark:border-teal-800">
+  <div className="bg-slate-900/50">
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center">
+      <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
         <span className="text-white text-lg">🇮🇳</span>
       </div>
       <h4 className="font-bold text-teal-900 dark:text-teal-100">Bombay Stock Exchange</h4>
@@ -565,48 +573,48 @@ icon: 'building-office'
 
 ## Trading Hours Around the World
 
-<div className="bg-gradient-to-br from-slate-50 to-gray-100 dark:from-slate-900 dark:to-gray-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 my-8">
-  <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-6 text-center">Global Trading Schedule (ET Time Zone)</h3>
+<div className="bg-slate-900/50">
+  <h3 className="text-xl font-bold text-slate-200 mb-6 text-center">Global Trading Schedule (ET Time Zone)</h3>
 
   <div className="overflow-x-auto">
     <table className="w-full">
       <thead>
         <tr className="border-b border-slate-200 dark:border-slate-700">
-          <th className="text-left p-4 font-semibold text-slate-700 dark:text-slate-300">Exchange</th>
-          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">Local Time</th>
-          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">ET Time</th>
-          <th className="text-center p-4 font-semibold text-slate-700 dark:text-slate-300">Status</th>
+          <th className="text-left p-4 font-semibold text-slate-300">Exchange</th>
+          <th className="text-center p-4 font-semibold text-slate-300">Local Time</th>
+          <th className="text-center p-4 font-semibold text-slate-300">ET Time</th>
+          <th className="text-center p-4 font-semibold text-slate-300">Status</th>
         </tr>
       </thead>
       <tbody>
         <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
           <td className="p-4 font-medium text-blue-600 dark:text-blue-400">🇺🇸 NYSE/NASDAQ</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">9:30 AM - 4:00 PM</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">9:30 AM - 4:00 PM</td>
+          <td className="text-center p-4 text-slate-300">9:30 AM - 4:00 PM</td>
+          <td className="text-center p-4 text-slate-300">9:30 AM - 4:00 PM</td>
           <td className="text-center p-4">
             <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-2 py-1 rounded text-xs">OPEN</span>
           </td>
         </tr>
         <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
           <td className="p-4 font-medium text-red-600 dark:text-red-400">🇻🇳 HoSE/HNX</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">9:00 AM - 3:00 PM</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">9:00 PM - 3:00 AM+1</td>
+          <td className="text-center p-4 text-slate-300">9:00 AM - 3:00 PM</td>
+          <td className="text-center p-4 text-slate-300">9:00 PM - 3:00 AM+1</td>
           <td className="text-center p-4">
             <span className="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-2 py-1 rounded text-xs">CLOSED</span>
           </td>
         </tr>
         <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
           <td className="p-4 font-medium text-purple-600 dark:text-purple-400">🇬🇧 LSE</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">8:00 AM - 4:30 PM</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">3:00 AM - 11:30 AM</td>
+          <td className="text-center p-4 text-slate-300">8:00 AM - 4:30 PM</td>
+          <td className="text-center p-4 text-slate-300">3:00 AM - 11:30 AM</td>
           <td className="text-center p-4">
             <span className="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-2 py-1 rounded text-xs">CLOSED</span>
           </td>
         </tr>
         <tr className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
           <td className="p-4 font-medium text-green-600 dark:text-green-400">🇯🇵 TSE</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">9:00 AM - 3:00 PM</td>
-          <td className="text-center p-4 text-slate-700 dark:text-slate-300">7:00 PM - 1:00 AM+1</td>
+          <td className="text-center p-4 text-slate-300">9:00 AM - 3:00 PM</td>
+          <td className="text-center p-4 text-slate-300">7:00 PM - 1:00 AM+1</td>
           <td className="text-center p-4">
             <span className="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-2 py-1 rounded text-xs">CLOSED</span>
           </td>
@@ -616,10 +624,10 @@ icon: 'building-office'
   </div>
 </div>
 
-<div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-6 my-8">
+<div className="bg-amber-50 dark:bg-amber-900/20 border border-slate-700 rounded-lg p-6 my-8">
   <div className="flex items-start gap-4">
-    <div className="w-8 h-8 bg-amber-500 rounded-xl flex items-center justify-center flex-shrink-0">
-      <span className="text-white text-lg">💡</span>
+    <div className="w-8 h-8 bg-slate-800 rounded-xl flex items-center justify-center flex-shrink-0">
+      <span className="text-white text-lg">lightbulb</span>
     </div>
     <div>
       <h4 className="text-amber-800 dark:text-amber-200 font-bold mb-2">Key Takeaway</h4>
