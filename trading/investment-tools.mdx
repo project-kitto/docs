@@ -11,9 +11,38 @@ icon: 'calculator'
   <span>Last updated: July 2025</span>
 </div>
 
-## Compound Interest Calculator
+## Understanding Compound Interest: The Most Powerful Force in Investing
 
-<div className="bg-gray-50 dark:bg-slate-900 p-8 rounded-xl border border-gray-200 dark:border-slate-800 my-8">
+Compound interest is often called the "eighth wonder of the world" because it allows your money to grow exponentially over time. Unlike simple interest, which only earns returns on your initial investment, compound interest earns returns on both your principal AND the interest you've already earned. This creates a snowball effect that becomes increasingly powerful over time.
+
+### How Compound Interest Works
+
+When you invest $1,000 at 8% annual return:
+- **Year 1**: $1,000 → $1,080 (earned $80)
+- **Year 2**: $1,080 → $1,166 (earned $86 on the larger base)
+- **Year 3**: $1,166 → $1,260 (earned $94 on an even larger base)
+
+Notice how each year you earn more dollars than the previous year, even though the percentage remains the same. This is the magic of compounding.
+
+### The Rule of 72
+
+A quick way to estimate how long it takes for your money to double: divide 72 by your annual return rate. For example, at 8% annual return, your money doubles every 9 years (72 ÷ 8 = 9).
+
+### Why Starting Early Matters More Than Amount
+
+Consider two investors:
+- **Sarah** invests $200/month starting at age 25 for 10 years ($24,000 total)
+- **Mike** invests $400/month starting at age 35 for 30 years ($144,000 total)
+
+At 8% annual return by age 65:
+- **Sarah's portfolio**: ~$525,000
+- **Mike's portfolio**: ~$490,000
+
+Sarah invested 6x less money but ended up with more because she started 10 years earlier. This demonstrates the incredible power of time in compound growth.
+
+## Interactive Compound Interest Calculator
+
+<div className="p-8 rounded-xl border border-slate-700 my-8">
   <div className="text-center mb-6">
     <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-2">Investment Growth Calculator</h3>
     <p className="text-slate-600 dark:text-slate-400">See how your investments can grow with compound returns</p>
@@ -21,101 +50,105 @@ icon: 'calculator'
 
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
     <div className="space-y-6">
-      <div className="bg-white/70 dark:bg-slate-800/70 p-6 rounded-xl border border-white/50 dark:border-slate-700/50">
-        <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-4">Investment Parameters</h4>
+      <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+        <h4 className="font-semibold text-slate-200 mb-4">Investment Parameters</h4>
 
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Initial Investment</label>
+            <label className="block text-sm font-medium text-slate-300 mb-2">Initial Investment</label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <span className="text-slate-500 dark:text-slate-400 text-sm">$</span>
+                <span className="text-slate-400 text-sm">$</span>
               </div>
               <input
                 type="number"
-                className="w-full pl-8 pr-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-colors"
+                className="w-full pl-8 pr-4 py-3 border border-slate-600 rounded-lg bg-slate-800 text-slate-100 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-colors"
                 placeholder="10,000"
                 defaultValue="10000"
               />
             </div>
+            <p className="text-xs text-slate-400 mt-1">The lump sum you're starting with</p>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Monthly Contribution</label>
+            <label className="block text-sm font-medium text-slate-300 mb-2">Monthly Contribution</label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <span className="text-slate-500 dark:text-slate-400 text-sm">$</span>
+                <span className="text-slate-400 text-sm">$</span>
               </div>
               <input
                 type="number"
-                className="w-full pl-8 pr-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-colors"
+                className="w-full pl-8 pr-4 py-3 border border-slate-600 rounded-lg bg-slate-800 text-slate-100 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-colors"
                 placeholder="500"
                 defaultValue="500"
               />
             </div>
+            <p className="text-xs text-slate-400 mt-1">Additional amount invested each month</p>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Annual Return Rate</label>
+            <label className="block text-sm font-medium text-slate-300 mb-2">Annual Return Rate</label>
             <div className="relative">
               <input
                 type="number"
-                className="w-full pl-4 pr-10 py-3 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-colors"
+                className="w-full pl-4 pr-10 py-3 border border-slate-600 rounded-lg bg-slate-800 text-slate-100 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-colors"
                 placeholder="8"
                 defaultValue="8"
               />
               <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-                <span className="text-slate-500 dark:text-slate-400 text-sm">%</span>
+                <span className="text-slate-400 text-sm">%</span>
               </div>
             </div>
+            <p className="text-xs text-slate-400 mt-1">S&P 500 historical average is ~10%</p>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Investment Period</label>
+            <label className="block text-sm font-medium text-slate-300 mb-2">Investment Period</label>
             <div className="relative">
               <input
                 type="number"
-                className="w-full pl-4 pr-16 py-3 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-colors"
+                className="w-full pl-4 pr-16 py-3 border border-slate-600 rounded-lg bg-slate-800 text-slate-100 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-colors"
                 placeholder="20"
                 defaultValue="20"
               />
               <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-                <span className="text-slate-500 dark:text-slate-400 text-sm">years</span>
+                <span className="text-slate-400 text-sm">years</span>
               </div>
             </div>
+            <p className="text-xs text-slate-400 mt-1">Longer time periods amplify compound growth</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div className="bg-white/70 dark:bg-slate-800/70 p-6 rounded-xl border border-white/50 dark:border-slate-700/50">
-      <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-4">Projected Results</h4>
+    <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+      <h4 className="font-semibold text-slate-200 mb-4">Projected Results</h4>
 
       <div className="space-y-4">
-        <div className="flex justify-between items-center p-4 bg-gray-50 dark:bg-gray-900/30 rounded-lg border border-gray-200 dark:border-gray-800">
-          <span className="text-slate-700 dark:text-slate-300">Total Contributions</span>
-          <span className="font-bold text-gray-600 dark:text-gray-400 text-lg">$130,000</span>
+        <div className="flex justify-between items-center p-4 bg-slate-700/50 rounded-lg border border-slate-600">
+          <span className="text-slate-300">Total Contributions</span>
+          <span className="font-bold text-slate-200 text-lg">$130,000</span>
         </div>
 
-        <div className="flex justify-between items-center p-4 bg-gray-50 dark:bg-gray-900/30 rounded-lg border border-gray-200 dark:border-gray-800">
-          <span className="text-slate-700 dark:text-slate-300">Investment Growth</span>
-          <span className="font-bold text-gray-600 dark:text-gray-400 text-lg">$240,876</span>
+        <div className="flex justify-between items-center p-4 bg-slate-700/50 rounded-lg border border-slate-600">
+          <span className="text-slate-300">Investment Growth</span>
+          <span className="font-bold text-slate-200 text-lg">$240,876</span>
         </div>
 
-        <div className="p-4 bg-gradient-to-r bg-gray-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-lg border border-gray-200 dark:border-gray-800">
+        <div className="p-4 bg-slate-700 rounded-lg border border-slate-600">
           <div className="flex justify-between items-center">
-            <span className="text-slate-800 dark:text-slate-200 font-semibold">Final Balance</span>
-            <span className="font-bold text-gray-600 dark:text-gray-400 text-2xl">$370,876</span>
+            <span className="text-slate-200 font-semibold">Final Balance</span>
+            <span className="font-bold text-slate-100 text-2xl">$370,876</span>
           </div>
         </div>
 
         <div className="mt-6">
-          <div className="flex justify-between text-sm text-slate-600 dark:text-slate-400 mb-2">
+          <div className="flex justify-between text-sm text-slate-400 mb-2">
             <span>Growth Breakdown</span>
-            <span>65% from investment growth</span>
+            <span>65% from compound growth</span>
           </div>
-          <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3 overflow-hidden">
-            <div className="h-full bg-gradient-to-r from-blue-500 via-emerald-500 to-purple-500 rounded-full transition-all duration-1000" style={{width: '65%'}}></div>
+          <div className="w-full bg-slate-700 rounded-full h-3 overflow-hidden">
+            <div className="h-full bg-slate-500 rounded-full transition-all duration-1000" style={{width: '65%'}}></div>
           </div>
         </div>
       </div>
@@ -123,193 +156,407 @@ icon: 'calculator'
   </div>
 </div>
 
-## Risk Tolerance Assessment
+## Understanding Risk Tolerance: The Foundation of Your Investment Strategy
 
-<div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-8 my-8 shadow-sm">
+Risk tolerance is your ability and willingness to lose some or all of your original investment in exchange for greater potential returns. It's one of the most crucial factors in determining your investment strategy, yet many beginners don't fully understand what it means or how to assess it properly.
+
+### Why Risk Tolerance Matters
+
+Your risk tolerance determines:
+- **Asset allocation**: How you split between stocks, bonds, and other investments
+- **Investment timeline**: How long you can wait for your investments to recover from downturns
+- **Sleep factor**: Whether market volatility will keep you awake at night
+- **Decision-making**: How you'll react during market crashes and bull runs
+
+### Types of Risk in Investing
+
+**Market Risk**: The risk that the entire market will decline, affecting most investments. Even diversified portfolios can't eliminate this risk.
+
+**Inflation Risk**: The risk that your returns won't keep pace with inflation, reducing your purchasing power over time. Cash and low-yield bonds are particularly vulnerable.
+
+**Liquidity Risk**: The risk that you won't be able to sell an investment quickly without taking a significant loss. Real estate and some bonds have higher liquidity risk.
+
+**Concentration Risk**: The risk of putting too much money in one investment, sector, or asset class. This is why diversification is crucial.
+
+### Factors That Influence Your Risk Tolerance
+
+**Age and Time Horizon**: Younger investors typically can take more risk because they have decades to recover from market downturns.
+
+**Income Stability**: Stable, predictable income allows for higher risk tolerance since you're not dependent on investment income.
+
+**Financial Goals**: Saving for retirement (long-term) vs. a house down payment (short-term) requires different risk approaches.
+
+**Experience Level**: New investors often overestimate their risk tolerance until they experience their first major market downturn.
+
+**Personality**: Some people naturally handle uncertainty better than others. Your emotional response to losses is as important as your financial capacity.
+
+## Comprehensive Risk Assessment Tool
+
+<div className="border border-slate-700 rounded-xl p-8 my-8">
   <div className="text-center mb-6">
-    <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-2">Investment Risk Profile</h3>
-    <p className="text-slate-600 dark:text-slate-400">Discover your optimal investment strategy based on your risk tolerance</p>
+    <h3 className="text-2xl font-bold text-slate-200 mb-2">Investment Risk Profile Assessment</h3>
+    <p className="text-slate-400">Answer these questions honestly to discover your optimal investment strategy</p>
   </div>
 
   <div className="space-y-8">
-    <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl">
-      <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-4">1. What's your investment timeline?</h4>
+    <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+      <h4 className="font-semibold text-slate-200 mb-4">1. What's your investment timeline?</h4>
+      <p className="text-sm text-slate-400 mb-4">Time horizon is crucial because longer periods allow you to ride out market volatility and benefit from compound growth.</p>
       <div className="space-y-3">
-        <label className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-white dark:hover:bg-slate-700 cursor-pointer transition-colors">
-          <input type="radio" name="timeline" className="w-4 h-4 text-gray-600 focus:ring-gray-500 border-slate-300 dark:border-slate-500" />
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="timeline" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
           <div className="ml-3 flex items-center justify-between w-full">
-            <span className="text-slate-700 dark:text-slate-300">Less than 5 years</span>
-            <span className="text-sm px-2 py-1 bg-gray-100 dark:bg-gray-900/30 text-gray-700 dark:text-gray-300 rounded-full">Conservative</span>
+            <div>
+              <span className="text-slate-300">Less than 5 years</span>
+              <div className="text-sm text-slate-400 mt-1">Short-term goals like emergency fund or house down payment</div>
+            </div>
+            <span className="text-sm px-2 py-1 bg-slate-700 text-slate-300 rounded-full">Conservative</span>
           </div>
         </label>
-        <label className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-white dark:hover:bg-slate-700 cursor-pointer transition-colors">
-          <input type="radio" name="timeline" className="w-4 h-4 text-gray-600 focus:ring-gray-500 border-slate-300 dark:border-slate-500" />
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="timeline" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
           <div className="ml-3 flex items-center justify-between w-full">
-            <span className="text-slate-700 dark:text-slate-300">5-15 years</span>
-            <span className="text-sm px-2 py-1 bg-gray-100 dark:bg-gray-900/30 text-gray-700 dark:text-gray-300 rounded-full">Moderate</span>
+            <div>
+              <span className="text-slate-300">5-15 years</span>
+              <div className="text-sm text-slate-400 mt-1">Medium-term goals like children's education or career change fund</div>
+            </div>
+            <span className="text-sm px-2 py-1 bg-slate-700 text-slate-300 rounded-full">Moderate</span>
           </div>
         </label>
-        <label className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-white dark:hover:bg-slate-700 cursor-pointer transition-colors">
-          <input type="radio" name="timeline" className="w-4 h-4 text-gray-600 focus:ring-gray-500 border-slate-300 dark:border-slate-500" />
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="timeline" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
           <div className="ml-3 flex items-center justify-between w-full">
-            <span className="text-slate-700 dark:text-slate-300">15+ years</span>
-            <span className="text-sm px-2 py-1 bg-gray-100 dark:bg-gray-900/30 text-gray-700 dark:text-gray-300 rounded-full">Aggressive</span>
+            <div>
+              <span className="text-slate-300">15+ years</span>
+              <div className="text-sm text-slate-400 mt-1">Long-term goals like retirement or generational wealth</div>
+            </div>
+            <span className="text-sm px-2 py-1 bg-slate-700 text-slate-300 rounded-full">Aggressive</span>
           </div>
         </label>
       </div>
     </div>
 
-    <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl">
-      <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-4">2. If your portfolio dropped 20% in a month, you would:</h4>
+    <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+      <h4 className="font-semibold text-slate-200 mb-4">2. If your portfolio dropped 20% in a month, you would:</h4>
+      <p className="text-sm text-slate-400 mb-4">This tests your emotional reaction to losses. The 2020 COVID crash saw many portfolios drop 30%+ in weeks.</p>
       <div className="space-y-3">
-        <label className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-white dark:hover:bg-slate-700 cursor-pointer transition-colors">
-          <input type="radio" name="reaction" className="w-4 h-4 text-gray-600 focus:ring-gray-500 border-slate-300 dark:border-slate-500" />
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="reaction" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
           <div className="ml-3">
-            <span className="text-slate-700 dark:text-slate-300">Sell everything immediately</span>
-            <div className="text-sm text-slate-500 dark:text-slate-400 mt-1">Risk-averse approach</div>
+            <span className="text-slate-300">Sell everything immediately</span>
+            <div className="text-sm text-slate-400 mt-1">Risk-averse: prioritize capital preservation over growth</div>
           </div>
         </label>
-        <label className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-white dark:hover:bg-slate-700 cursor-pointer transition-colors">
-          <input type="radio" name="reaction" className="w-4 h-4 text-gray-600 focus:ring-gray-500 border-slate-300 dark:border-slate-500" />
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="reaction" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
           <div className="ml-3">
-            <span className="text-slate-700 dark:text-slate-300">Hold and wait for recovery</span>
-            <div className="text-sm text-slate-500 dark:text-slate-400 mt-1">Balanced approach</div>
+            <span className="text-slate-300">Hold and wait for recovery</span>
+            <div className="text-sm text-slate-400 mt-1">Balanced: understand that markets recover over time</div>
           </div>
         </label>
-        <label className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-white dark:hover:bg-slate-700 cursor-pointer transition-colors">
-          <input type="radio" name="reaction" className="w-4 h-4 text-gray-600 focus:ring-gray-500 border-slate-300 dark:border-slate-500" />
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="reaction" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
           <div className="ml-3">
-            <span className="text-slate-700 dark:text-slate-300">Buy more at lower prices</span>
-            <div className="text-sm text-slate-500 dark:text-slate-400 mt-1">Opportunistic approach</div>
+            <span className="text-slate-300">Buy more at lower prices</span>
+            <div className="text-sm text-slate-400 mt-1">Opportunistic: see market drops as buying opportunities</div>
           </div>
         </label>
       </div>
     </div>
 
-    <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl">
-      <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-4">3. Your primary investment goal is:</h4>
+    <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+      <h4 className="font-semibold text-slate-200 mb-4">3. Your primary investment goal is:</h4>
+      <p className="text-sm text-slate-400 mb-4">Different goals require different risk levels and investment approaches.</p>
       <div className="space-y-3">
-        <label className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-white dark:hover:bg-slate-700 cursor-pointer transition-colors">
-          <input type="radio" name="goal" className="w-4 h-4 text-gray-600 focus:ring-gray-500 border-slate-300 dark:border-slate-500" />
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="goal" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
           <div className="ml-3">
-            <span className="text-slate-700 dark:text-slate-300">Preserve capital and generate income</span>
-            <div className="text-sm text-slate-500 dark:text-slate-400 mt-1">Focus on stability and dividends</div>
+            <span className="text-slate-300">Preserve capital and generate income</span>
+            <div className="text-sm text-slate-400 mt-1">Focus on dividend stocks, bonds, and stable value investments</div>
           </div>
         </label>
-        <label className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-white dark:hover:bg-slate-700 cursor-pointer transition-colors">
-          <input type="radio" name="goal" className="w-4 h-4 text-gray-600 focus:ring-gray-500 border-slate-300 dark:border-slate-500" />
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="goal" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
           <div className="ml-3">
-            <span className="text-slate-700 dark:text-slate-300">Balanced growth and income</span>
-            <div className="text-sm text-slate-500 dark:text-slate-400 mt-1">Mix of growth and dividend stocks</div>
+            <span className="text-slate-300">Balanced growth and income</span>
+            <div className="text-sm text-slate-400 mt-1">Mix of growth stocks, dividend stocks, and bonds for steady appreciation</div>
           </div>
         </label>
-        <label className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-white dark:hover:bg-slate-700 cursor-pointer transition-colors">
-          <input type="radio" name="goal" className="w-4 h-4 text-gray-600 focus:ring-gray-500 border-slate-300 dark:border-slate-500" />
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="goal" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
           <div className="ml-3">
-            <span className="text-slate-700 dark:text-slate-300">Maximum long-term growth</span>
-            <div className="text-sm text-slate-500 dark:text-slate-400 mt-1">Growth stocks and emerging markets</div>
+            <span className="text-slate-300">Maximum long-term growth</span>
+            <div className="text-sm text-slate-400 mt-1">Growth stocks, emerging markets, and higher-risk investments</div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div className="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+      <h4 className="font-semibold text-slate-200 mb-4">4. What percentage of your income can you invest monthly?</h4>
+      <p className="text-sm text-slate-400 mb-4">This determines your capacity for risk. Higher savings rates allow for more aggressive strategies.</p>
+      <div className="space-y-3">
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="savings" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
+          <div className="ml-3">
+            <span className="text-slate-300">Less than 10%</span>
+            <div className="text-sm text-slate-400 mt-1">Limited capacity for risk due to tight budget</div>
+          </div>
+        </label>
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="savings" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
+          <div className="ml-3">
+            <span className="text-slate-300">10-20%</span>
+            <div className="text-sm text-slate-400 mt-1">Good savings rate allowing for moderate risk taking</div>
+          </div>
+        </label>
+        <label className="flex items-center p-3 rounded-lg border border-slate-600 hover:bg-slate-700/50 cursor-pointer transition-colors">
+          <input type="radio" name="savings" className="w-4 h-4 text-slate-500 focus:ring-slate-500 border-slate-500" />
+          <div className="ml-3">
+            <span className="text-slate-300">More than 20%</span>
+            <div className="text-sm text-slate-400 mt-1">High savings rate enabling aggressive investment strategies</div>
           </div>
         </label>
       </div>
     </div>
 
     <div className="text-center">
-      <button className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-        Get My Risk Profile
+      <button className="bg-slate-700 hover:bg-slate-600 text-slate-200 font-medium py-3 px-8 rounded-lg transition-all duration-300 border border-slate-600">
+        Calculate My Risk Profile
       </button>
     </div>
   </div>
 </div>
 
-## Portfolio Allocation Recommendations
+## Understanding Portfolio Allocation: Building Your Investment Foundation
+
+Portfolio allocation is the strategic distribution of your investments across different asset classes, sectors, and geographic regions. It's often considered the most important factor in determining your investment returns - more important than individual stock selection or market timing.
+
+### The Asset Allocation Framework
+
+Asset allocation typically involves four main categories:
+
+**Stocks (Equities)**: Represent ownership in companies. Higher risk, higher potential return. Historical average return: ~10% annually.
+
+**Bonds (Fixed Income)**: Loans to governments or corporations. Lower risk, lower return. Provide stability and income. Historical average return: ~5% annually.
+
+**Real Estate (REITs)**: Investment in real estate through Real Estate Investment Trusts. Provides diversification and inflation protection.
+
+**Alternatives**: Commodities, precious metals, cryptocurrencies. Used for further diversification and hedging against specific risks.
+
+### Age-Based Allocation Rules
+
+**The 100 Minus Age Rule**: A simple guideline where you subtract your age from 100 to get your stock allocation percentage. At 30, you'd hold 70% stocks, 30% bonds.
+
+**Modern Adaptations**: Given longer lifespans and low bond yields, many advisors now suggest "110 minus age" or even "120 minus age" for stock allocation.
+
+### Risk-Return Profiles Explained
+
+**Conservative Portfolio (Low Risk)**
+- **Target Return**: 6-7% annually
+- **Maximum Drawdown**: -15% in bad years
+- **Best For**: Nearing retirement, short time horizons, risk-averse investors
+- **Volatility**: Low - you can sleep well during market storms
+
+**Moderate Portfolio (Medium Risk)**
+- **Target Return**: 8-9% annually
+- **Maximum Drawdown**: -25% in bad years
+- **Best For**: Mid-career investors, balanced goals, moderate risk tolerance
+- **Volatility**: Medium - some sleepless nights during major market events
+
+**Aggressive Portfolio (High Risk)**
+- **Target Return**: 10-12% annually
+- **Maximum Drawdown**: -35% in bad years
+- **Best For**: Young investors, long time horizons, high risk tolerance
+- **Volatility**: High - you need strong conviction during major downturns
+
+## Detailed Portfolio Allocation Strategies
 
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
-  <div className="bg-gray-50">
+  <div className="border border-slate-700 rounded-xl p-6">
     <div className="text-center mb-4">
-      <div className="w-12 h-12 bg-gray-500 rounded-xl flex items-center justify-center mx-auto mb-3">
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="w-12 h-12 bg-slate-600 rounded-xl flex items-center justify-center mx-auto mb-3">
+        <svg className="w-6 h-6 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       </div>
-      <h3 className="font-bold text-gray-800 dark:text-gray-200">Conservative</h3>
-      <p className="text-sm text-gray-600 dark:text-gray-400">Low Risk • 6-7% Expected Return</p>
+      <h3 className="font-bold text-slate-200">Conservative Portfolio</h3>
+      <p className="text-sm text-slate-400">Low Risk • 6-7% Expected Return</p>
     </div>
 
-    <div className="space-y-3">
+    <div className="space-y-4 mb-6">
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">Bonds</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">60%</span>
+        <span className="text-sm text-slate-300">Government/Corporate Bonds</span>
+        <span className="font-semibold text-slate-200">60%</span>
       </div>
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">Large Cap Stocks</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">30%</span>
+        <span className="text-sm text-slate-300">Large Cap Dividend Stocks</span>
+        <span className="font-semibold text-slate-200">25%</span>
       </div>
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">REITs</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">10%</span>
+        <span className="text-sm text-slate-300">REITs</span>
+        <span className="font-semibold text-slate-200">10%</span>
       </div>
+      <div className="flex justify-between items-center">
+        <span className="text-sm text-slate-300">Cash/Money Market</span>
+        <span className="font-semibold text-slate-200">5%</span>
+      </div>
+    </div>
+
+    <div className="text-xs text-slate-400 space-y-1">
+      <p><strong>Pros:</strong> Low volatility, steady income, capital preservation</p>
+      <p><strong>Cons:</strong> Lower growth potential, inflation risk</p>
+      <p><strong>Example ETFs:</strong> BND, VTI, VNQ, VTEB</p>
     </div>
   </div>
 
-  <div className="bg-gray-50">
+  <div className="border border-slate-700 rounded-xl p-6">
     <div className="text-center mb-4">
-      <div className="w-12 h-12 bg-gray-500 rounded-xl flex items-center justify-center mx-auto mb-3">
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="w-12 h-12 bg-slate-600 rounded-xl flex items-center justify-center mx-auto mb-3">
+        <svg className="w-6 h-6 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
         </svg>
       </div>
-      <h3 className="font-bold text-gray-800 dark:text-gray-200">Moderate</h3>
-      <p className="text-sm text-gray-600 dark:text-gray-400">Medium Risk • 8-9% Expected Return</p>
+      <h3 className="font-bold text-slate-200">Moderate Portfolio</h3>
+      <p className="text-sm text-slate-400">Medium Risk • 8-9% Expected Return</p>
     </div>
 
-    <div className="space-y-3">
+    <div className="space-y-4 mb-6">
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">Mixed Stocks</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">60%</span>
+        <span className="text-sm text-slate-300">US Stock Market (S&P 500)</span>
+        <span className="font-semibold text-slate-200">40%</span>
       </div>
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">Bonds</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">30%</span>
+        <span className="text-sm text-slate-300">International Stocks</span>
+        <span className="font-semibold text-slate-200">20%</span>
       </div>
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">REITs</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">7%</span>
+        <span className="text-sm text-slate-300">Bonds</span>
+        <span className="font-semibold text-slate-200">30%</span>
       </div>
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">Commodities</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">3%</span>
+        <span className="text-sm text-slate-300">REITs</span>
+        <span className="font-semibold text-slate-200">7%</span>
       </div>
+      <div className="flex justify-between items-center">
+        <span className="text-sm text-slate-300">Commodities</span>
+        <span className="font-semibold text-slate-200">3%</span>
+      </div>
+    </div>
+
+    <div className="text-xs text-slate-400 space-y-1">
+      <p><strong>Pros:</strong> Balanced growth and stability, global diversification</p>
+      <p><strong>Cons:</strong> Moderate volatility during market stress</p>
+      <p><strong>Example ETFs:</strong> VTI, VTIAX, BND, VNQ, DJP</p>
     </div>
   </div>
 
-  <div className="bg-gray-50">
+  <div className="border border-slate-700 rounded-xl p-6">
     <div className="text-center mb-4">
-      <div className="w-12 h-12 bg-gray-500 rounded-xl flex items-center justify-center mx-auto mb-3">
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="w-12 h-12 bg-slate-600 rounded-xl flex items-center justify-center mx-auto mb-3">
+        <svg className="w-6 h-6 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       </div>
-      <h3 className="font-bold text-gray-800 dark:text-gray-200">Aggressive</h3>
-      <p className="text-sm text-gray-600 dark:text-gray-400">High Risk • 10-12% Expected Return</p>
+      <h3 className="font-bold text-slate-200">Aggressive Portfolio</h3>
+      <p className="text-sm text-slate-400">High Risk • 10-12% Expected Return</p>
     </div>
 
-    <div className="space-y-3">
+    <div className="space-y-4 mb-6">
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">Growth Stocks</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">70%</span>
+        <span className="text-sm text-slate-300">US Growth Stocks</span>
+        <span className="font-semibold text-slate-200">50%</span>
       </div>
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">International</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">15%</span>
+        <span className="text-sm text-slate-300">International/Emerging Markets</span>
+        <span className="font-semibold text-slate-200">25%</span>
       </div>
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">Bonds</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">10%</span>
+        <span className="text-sm text-slate-300">Small Cap Stocks</span>
+        <span className="font-semibold text-slate-200">15%</span>
       </div>
       <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-700 dark:text-gray-300">Alternatives</span>
-        <span className="font-semibold text-gray-600 dark:text-gray-400">5%</span>
+        <span className="text-sm text-slate-300">Bonds</span>
+        <span className="font-semibold text-slate-200">5%</span>
       </div>
+      <div className="flex justify-between items-center">
+        <span className="text-sm text-slate-300">Alternative Investments</span>
+        <span className="font-semibold text-slate-200">5%</span>
+      </div>
+    </div>
+
+    <div className="text-xs text-slate-400 space-y-1">
+      <p><strong>Pros:</strong> Maximum growth potential, inflation protection</p>
+      <p><strong>Cons:</strong> High volatility, potential for large losses</p>
+      <p><strong>Example ETFs:</strong> QQQ, VTI, VWO, VB, GLD</p>
     </div>
   </div>
 </div>
+
+## Rebalancing: Maintaining Your Target Allocation
+
+Rebalancing is the process of buying and selling investments to return your portfolio to your target allocation. It's a crucial but often overlooked aspect of successful investing.
+
+### Why Rebalancing Matters
+
+Over time, your asset allocation will drift from your target as different investments perform differently. If stocks outperform bonds, your portfolio becomes more stock-heavy and riskier than intended. Rebalancing forces you to "sell high and buy low" - selling assets that have performed well and buying those that have underperformed.
+
+### Rebalancing Strategies
+
+**Calendar Rebalancing**: Rebalance on a set schedule (quarterly, semi-annually, or annually). Simple but may not capture significant market movements.
+
+**Threshold Rebalancing**: Rebalance when any asset class deviates more than 5-10% from its target allocation. More responsive to market conditions.
+
+**Hybrid Approach**: Combine both methods - check quarterly but only rebalance if thresholds are exceeded.
+
+### Rebalancing Considerations
+
+**Tax Implications**: In taxable accounts, rebalancing can trigger capital gains taxes. Consider rebalancing within tax-advantaged accounts first.
+
+**Transaction Costs**: Frequent rebalancing can generate fees. Balance the benefits with costs.
+
+**Market Conditions**: During extended bull or bear markets, strict rebalancing might feel counterintuitive but is often beneficial long-term.
+
+## Dollar-Cost Averaging vs. Lump Sum Investing
+
+This is one of the most common dilemmas new investors face: should you invest all your money at once or spread it out over time?
+
+### Dollar-Cost Averaging (DCA) Explained
+
+DCA involves investing a fixed amount regularly regardless of market conditions. For example, investing $500 every month for two years instead of $12,000 all at once.
+
+**Pros of DCA:**
+- Reduces timing risk - you don't risk investing everything at a market peak
+- Emotionally easier - less stress about market timing
+- Forces investing discipline - automates the investment process
+- Smooths out market volatility over time
+
+**Cons of DCA:**
+- Historically underperforms lump sum investing (~2/3 of the time)
+- Opportunity cost - money sitting in cash earns lower returns
+- May prolong the anxiety of having uninvested cash
+
+### Lump Sum Investing Explained
+
+Investing all available money immediately rather than spreading it out over time.
+
+**Pros of Lump Sum:**
+- Statistically superior performance - time in market beats timing the market
+- Maximizes compound growth potential
+- Eliminates the cash drag of uninvested funds
+- Simplicity - one decision vs. ongoing timing decisions
+
+**Cons of Lump Sum:**
+- Higher emotional stress - fear of investing at the "wrong" time
+- Maximum regret potential if markets decline immediately after investing
+- Requires strong conviction and discipline
+
+### The Hybrid Approach
+
+Many investors compromise by:
+- Investing immediately with existing savings
+- Using DCA for future earnings and regular contributions
+- Accelerating DCA during market downturns
+- Investing lump sums for long-term goals, DCA for shorter-term needs
+
+The key insight: The best approach depends more on your emotional comfort than mathematical optimization. The strategy you can stick with consistently is often more important than the theoretically optimal approach.

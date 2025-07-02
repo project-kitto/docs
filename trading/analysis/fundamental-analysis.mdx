@@ -1,21 +1,149 @@
 ---
-title: 'Fundamental Analysis Deep Dive'
-description: 'Evaluate companies like a professional investor'
+title: 'Fundamental Analysis Mastery: Evaluating Investment Quality'
+description: 'Learn to analyze companies like professional investors and identify undervalued opportunities'
 icon: 'building'
 ---
 
-<div className="flex items-center gap-2 mb-6 text-sm text-gray-600">
+<div className="flex items-center gap-2 mb-6 text-sm text-slate-500">
   <Icon icon="clock" size={16} />
-  <span>18 min read</span>
+  <span>25 min read</span>
   <span>•</span>
-  <span>Last updated: December 2024 by Quoc Doan</span>
+  <span>Last updated: July 2025</span>
 </div>
 
-<Card title=" What is Fundamental Analysis?" icon="magnifying-glass" color="#6b7280">
-  Fundamental analysis evaluates a company's intrinsic value by examining financial statements, business model, competitive advantages, and economic factors.
+<Card title="What is Fundamental Analysis?" icon="magnifying-glass" color="#6b7280">
+  Fundamental analysis is the cornerstone of intelligent investing - evaluating a company's intrinsic value by examining its financial health, business model, competitive position, and growth prospects to make informed investment decisions.
 </Card>
 
-## The Three Financial Statements
+## Why Fundamental Analysis Matters
+
+Fundamental analysis helps you answer the most important investment question: "Is this company's stock price justified by its underlying business value?" This approach has made legendary investors like Warren Buffett, Peter Lynch, and Benjamin Graham incredibly wealthy.
+
+### The Investment Philosophy
+
+**Value vs. Price**: Price is what you pay, value is what you get. Fundamental analysis helps you identify when a stock's price is significantly different from its intrinsic value.
+
+**Long-term Perspective**: While stock prices fluctuate wildly in the short term, they tend to reflect business fundamentals over longer periods.
+
+**Competitive Advantage**: The best investments are companies with sustainable competitive advantages (moats) that protect their profits from competition.
+
+### What Fundamental Analysis Reveals
+
+- **Financial Health**: Is the company profitable and growing?
+- **Business Quality**: Does it have competitive advantages?
+- **Management Quality**: Are executives making smart decisions?
+- **Valuation**: Is the stock cheap, fair, or expensive?
+- **Growth Prospects**: What's the potential for future expansion?
+
+## The Three Essential Financial Statements
+
+Understanding financial statements is like learning to read - it's essential for investment success. Every public company publishes these quarterly and annually.
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+  <div className="border border-slate-700 rounded-xl p-6">
+    <h3 className="text-lg font-bold text-slate-200 mb-3">Income Statement</h3>
+    <p className="text-slate-400 text-sm mb-4">Shows profitability over a period (quarter/year)</p>
+
+    <div className="space-y-2 text-sm">
+      <div className="flex justify-between">
+        <span className="text-slate-300">Revenue</span>
+        <span className="text-slate-400">$100M</span>
+      </div>
+      <div className="flex justify-between">
+        <span className="text-slate-300">- COGS</span>
+        <span className="text-slate-400">$60M</span>
+      </div>
+      <div className="flex justify-between border-t border-slate-600 pt-2">
+        <span className="text-slate-300">Gross Profit</span>
+        <span className="text-slate-400">$40M</span>
+      </div>
+      <div className="flex justify-between">
+        <span className="text-slate-300">- Operating Exp</span>
+        <span className="text-slate-400">$25M</span>
+      </div>
+      <div className="flex justify-between border-t border-slate-600 pt-2">
+        <span className="text-slate-200 font-semibold">Net Income</span>
+        <span className="text-slate-200 font-semibold">$15M</span>
+      </div>
+    </div>
+  </div>
+
+  <div className="border border-slate-700 rounded-xl p-6">
+    <h3 className="text-lg font-bold text-slate-200 mb-3">Balance Sheet</h3>
+    <p className="text-slate-400 text-sm mb-4">Snapshot of assets, liabilities, and equity</p>
+
+    <div className="space-y-2 text-sm">
+      <div className="flex justify-between">
+        <span className="text-slate-300">Cash</span>
+        <span className="text-slate-400">$50M</span>
+      </div>
+      <div className="flex justify-between">
+        <span className="text-slate-300">Other Assets</span>
+        <span className="text-slate-400">$150M</span>
+      </div>
+      <div className="flex justify-between border-t border-slate-600 pt-2">
+        <span className="text-slate-300">Total Assets</span>
+        <span className="text-slate-400">$200M</span>
+      </div>
+      <div className="flex justify-between">
+        <span className="text-slate-300">Debt</span>
+        <span className="text-slate-400">$80M</span>
+      </div>
+      <div className="flex justify-between border-t border-slate-600 pt-2">
+        <span className="text-slate-200 font-semibold">Equity</span>
+        <span className="text-slate-200 font-semibold">$120M</span>
+      </div>
+    </div>
+  </div>
+
+  <div className="border border-slate-700 rounded-xl p-6">
+    <h3 className="text-lg font-bold text-slate-200 mb-3">Cash Flow Statement</h3>
+    <p className="text-slate-400 text-sm mb-4">Tracks actual cash movements</p>
+
+    <div className="space-y-2 text-sm">
+      <div className="flex justify-between">
+        <span className="text-slate-300">Operating CF</span>
+        <span className="text-slate-400">$20M</span>
+      </div>
+      <div className="flex justify-between">
+        <span className="text-slate-300">Investing CF</span>
+        <span className="text-slate-400">($10M)</span>
+      </div>
+      <div className="flex justify-between">
+        <span className="text-slate-300">Financing CF</span>
+        <span className="text-slate-400">($5M)</span>
+      </div>
+      <div className="flex justify-between border-t border-slate-600 pt-2">
+        <span className="text-slate-200 font-semibold">Net Cash Flow</span>
+        <span className="text-slate-200 font-semibold">$5M</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Understanding the Income Statement
+
+The income statement tells the story of a company's profitability over a specific period. Think of it as a report card for how well management converted sales into profits.
+
+**Revenue (Top Line)**: Total money coming in from sales
+- **Quality Check**: Is revenue growing consistently? Is growth from new customers or higher prices?
+- **Red Flags**: Declining revenue, heavy dependence on one customer, one-time revenue boosts
+
+**Cost of Goods Sold (COGS)**: Direct costs to produce products/services
+- **Analysis**: Lower COGS as % of revenue suggests improving efficiency or pricing power
+- **Benchmark**: Compare COGS margins to industry competitors
+
+**Gross Profit = Revenue - COGS**
+- **Interpretation**: Higher gross margins indicate pricing power and competitive advantages
+- **Example**: Apple's ~38% gross margins vs. Dell's ~23% shows Apple's premium pricing ability
+
+**Operating Expenses**: Costs to run the business (R&D, marketing, administration)
+- **Growth Phase**: High R&D spending can indicate future growth investment
+- **Mature Phase**: Operating leverage should improve margins as revenue grows
+
+**Net Income (Bottom Line)**: Final profit after all expenses and taxes
+- **Growth Pattern**: Look for consistent growth over multiple years
+- **Quality**: Prefer companies that grow earnings faster than revenue (improving margins)
 
 <Tabs>
   <Tab title="Income Statement">
