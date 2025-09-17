@@ -42,13 +42,6 @@
             ]
           },
           {
-            "group": "Advanced Topics",
-            "pages": [
-              "trading/portfolios-and-assets",
-              "trading/company-kpis"
-            ]
-          },
-          {
             "group": "Markets",
             "pages": [
               "trading/markets/us-markets",
