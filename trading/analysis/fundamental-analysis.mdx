@@ -287,7 +287,7 @@ The income statement tells the story of a company's profitability over a specifi
     **Generally**: Higher is better, compare within industry
   </Card>
 
-  <Card title="Net Profit Margin" icon="percentage">
+  <Card title="Net Profit Margin" icon="percent">
     ```
     Net Margin = Net Income / Revenue × 100%
     ```
@@ -297,44 +297,6 @@ The income statement tells the story of a company's profitability over a specifi
     **Industry Comparison**: Essential for meaningful analysis
   </Card>
 </CardGroup>
-
-### Liquidity Ratios
-
-<Tabs>
-  <Tab title="Current Ratio">
-    ```javascript
-    // Current Ratio Formula
-    const currentRatio = currentAssets / currentLiabilities;
-
-    // Interpretation
-    if (currentRatio > 2) {
-      console.log("Strong liquidity, may have excess cash");
-    } else if (currentRatio >= 1.5) {
-      console.log("Good liquidity position");
-    } else if (currentRatio >= 1) {
-      console.log("Adequate liquidity, monitor closely");
-    } else {
-      console.log("Potential liquidity concerns");
-    }
-    ```
-  </Tab>
-
-  <Tab title="Quick Ratio">
-    ```javascript
-    // Quick Ratio (Acid Test)
-    const quickRatio = (currentAssets - inventory) / currentLiabilities;
-
-    // More conservative than current ratio
-    // Excludes inventory (harder to convert to cash)
-
-    const interpretation = {
-      excellent: quickRatio >= 1.5,
-      good: quickRatio >= 1.0,
-      concerning: quickRatio < 1.0
-    };
-    ```
-  </Tab>
-</Tabs>
 
 ### Valuation Ratios
 
@@ -517,14 +479,14 @@ intrinsic_value = dcf_valuation(projected_fcf, terminal_growth, discount_rate)
 </Warning>
 
 <CardGroup cols={2}>
-  <Card title="Accounting Red Flags" icon="exclamation-triangle" color="#6b7280">
+  <Card title="Accounting Red Flags" icon="exclamation" color="#6b7280">
     - Frequent auditor changes
     - Aggressive revenue recognition
     - Growing gap between earnings and cash flow
     - Off-balance sheet liabilities
   </Card>
 
-  <Card title="Business Red Flags" icon="building-exclamation" color="#6b7280">
+  <Card title="Business Red Flags" icon="building" color="#6b7280">
     - Declining market share
     - Heavy dependence on few customers
     - Excessive management turnover
@@ -538,7 +500,7 @@ intrinsic_value = dcf_valuation(projected_fcf, terminal_growth, discount_rate)
     - Dividend cuts or suspensions
   </Card>
 
-  <Card title="Market Red Flags" icon="trending-down" color="#6b7280">
+  <Card title="Market Red Flags" icon="chart-area" color="#6b7280">
     - Loss of competitive advantages
     - Regulatory challenges
     - Technology disruption
@@ -577,7 +539,7 @@ intrinsic_value = dcf_valuation(projected_fcf, terminal_growth, discount_rate)
 ## Tools and Resources
 
 <CardGroup cols={3}>
-  <Card title="SEC Filings" icon="file-text" href="https://sec.gov/edgar">
+  <Card title="SEC Filings" icon="file" href="https://sec.gov/edgar">
     Access company 10-K, 10-Q, and 8-K filings for detailed financial information
   </Card>
 
@@ -594,19 +556,12 @@ intrinsic_value = dcf_valuation(projected_fcf, terminal_growth, discount_rate)
 
 Ready to apply fundamental analysis to specific markets and develop your investment strategy?
 
-<CardGroup cols={2}>
+<CardGroup cols={1}>
   <Card
     title="US Market Guide"
     icon="flag-usa"
     href="/trading/markets/us-markets"
   >
     Learn specifics about trading US stocks and market dynamics
-  </Card>
-  <Card
-    title="Vietnam Market Guide"
-    icon="flag"
-    href="/trading/markets/vietnam-markets"
-  >
-    Discover opportunities in Vietnam's emerging stock market
   </Card>
 </CardGroup>
