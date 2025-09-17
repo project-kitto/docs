@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Kitto Central Knowledge Base",
   "colors": {
-    "primary": "#00d4ff",
-    "light": "#4dd7ff",
-    "dark": "#0095cc"
+    "primary": "#22c55e",
+    "light": "#4ade80",
+    "dark": "#15803d"
   },
   "favicon": "/favicon.svg",
   "navigation": {
